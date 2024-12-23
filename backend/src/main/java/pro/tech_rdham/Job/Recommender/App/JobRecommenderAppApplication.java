@@ -12,11 +12,11 @@ import java.net.URLEncoder;
 
 @SpringBootApplication
 public class JobRecommenderAppApplication {
-
 	public static void main(String[] args) {
 //		SpringApplication.run(JobRecommenderAppApplication.class, args);
+		Service service = new Service();
+		service.printAPIData();
 		String resumeData = new ResumeParser("RDSWE2025.pdf").parseResume();
 		System.out.println(resumeData + "\nResume parsed successfully");
 	}
-
 }
