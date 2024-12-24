@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 @SpringBootApplication
 public class JobRecommenderAppApplication {
@@ -16,7 +18,7 @@ public class JobRecommenderAppApplication {
 //		SpringApplication.run(JobRecommenderAppApplication.class, args);
 		Service service = new Service();
 		service.printAPIData();
-		String resumeData = new ResumeParser("RDSWE2025.pdf").parseResume();
-		System.out.println(resumeData + "\nResume parsed successfully");
+		String[] resumeData = new ResumeParser("RDSWE2025.pdf").parseResume();
+		System.out.println(Arrays.toString(resumeData) + "\nResume parsed successfully");
 	}
 }
