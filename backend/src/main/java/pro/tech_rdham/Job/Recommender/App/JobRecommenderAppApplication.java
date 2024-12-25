@@ -11,14 +11,22 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 
 @SpringBootApplication
 public class JobRecommenderAppApplication {
+
+	public static void printResume(Map<String, ArrayList<String>> map){
+		for (Map.Entry<String, ArrayList<String>> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + ": " + entry.getValue());
+		}
+	}
 	public static void main(String[] args) {
 //		SpringApplication.run(JobRecommenderAppApplication.class, args);
 		Service service = new Service();
 		service.printAPIData();
-		String[] resumeData = new ResumeParser("RDSWE2025.pdf").parseResume();
-		System.out.println(Arrays.toString(resumeData) + "\nResume parsed successfully");
+		Map<String, ArrayList<String>> resumeData = new ResumeParser("SohamKunduResume1.pdf").parseResume();
+		printResume(resumeData);
+		System.out.println("Resume parsed successfully");
 	}
 }

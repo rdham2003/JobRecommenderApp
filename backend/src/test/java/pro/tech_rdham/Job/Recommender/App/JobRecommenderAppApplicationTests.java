@@ -10,4 +10,6 @@ class JobRecommenderAppApplicationTests {
 	void contextLoads() {
 	}
 
+
+
 }
