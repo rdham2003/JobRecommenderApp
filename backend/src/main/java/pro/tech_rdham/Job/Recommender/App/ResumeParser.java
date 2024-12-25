@@ -52,6 +52,16 @@ public class ResumeParser{
                     i--;
                 }
             }
+            HashMap<String, Integer> skills = new readCSV().readCSVFile("src/main/resources/skills.csv");
+//          System.out.println(skills);
+            HashMap<String,String> strCat = new HashMap<>();
+            for (Map.Entry<String, ArrayList<String>> entry: catagories.entrySet()) {
+                String strCatag = String.join(" ", entry.getValue()).replaceAll(",", "");
+                System.out.println(strCatag);
+                strCat.put(entry.getKey(), strCatag);
+            }
+            ArrayList<String> usersSkills = getUserSkills(skills, strCat);
+            System.out.println(usersSkills);
             return catagories;
         }
         catch(Exception E){
@@ -81,5 +91,19 @@ public class ResumeParser{
             }
         }
         return null;
+    }
+
+    public ArrayList<String> getUserSkills(HashMap<String, Integer> skills, Map<String, String> map){
+        ArrayList<String> userSkills = new ArrayList<>();
+        for (Map.Entry<String, String> entry: map.entrySet()){
+            ArrayList<String> parsedList = new ArrayList<String>(List.of(entry.getValue().split(" ")));
+            for (String element : parsedList){
+                if (skills.get(element) != null && skills.get(element) != 1){
+                    userSkills.add(element);
+                    skills.put(element, 1);
+                }
+            }
+        }
+        return userSkills;
     }
 }
