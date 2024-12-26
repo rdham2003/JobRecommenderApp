@@ -25,7 +25,7 @@ public class JobRecommenderAppApplication {
 //		SpringApplication.run(JobRecommenderAppApplication.class, args);
 		Service service = new Service();
 		service.printAPIData();
-		Map<String, ArrayList<String>> resumeData = new ResumeParser("SohamKunduResume1.pdf").parseResume();
+		Map<String, ArrayList<String>> resumeData = new ResumeParser("RDSWE2025.pdf").parseResume();
 //		printResume(resumeData);
 		System.out.println("Resume parsed successfully");
 	}
