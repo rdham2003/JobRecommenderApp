@@ -1,6 +1,8 @@
 package pro.tech_rdham.Job.Recommender.App;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,8 +27,11 @@ public class JobRecommenderAppApplication {
 //		SpringApplication.run(JobRecommenderAppApplication.class, args);
 		Service service = new Service();
 		service.printAPIData();
-		Map<String, ArrayList<String>> resumeData = new ResumeParser("RDSWE2025.pdf").parseResume();
-//		printResume(resumeData);
+		ArrayList<String> resumeData = new ResumeParser("Resume Base-SWE.pdf").parseResume();
+//		System.out.println(resumeData);
+		JSONObject jobData = service.makeCall("US", resumeData, "Minneapolis", 500, false);
+		JSONArray jobs = (JSONArray) jobData.get("results");
+		System.out.println(jobs);
 		System.out.println("Resume parsed successfully");
 	}
 }

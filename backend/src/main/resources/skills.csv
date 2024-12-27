@@ -9,6 +9,7 @@ ada programming
 adonisjs
 agile
 agile testing
+airbyte
 airflow
 airtable
 aix (advanced interactive executive)
@@ -28,6 +29,7 @@ apache beam
 apache camel
 apache cassandra
 apache flink
+apache hudi
 apache ignite
 apache kafka streams
 apache mesos
@@ -40,9 +42,10 @@ apm (application performance monitoring)
 appium
 apple arkit
 application development
+arangodb
 arcgis
-architecture
 arduino
+argocd
 arkit
 arm architecture
 arm cortex development
@@ -56,6 +59,7 @@ automated deployment
 automl
 avro
 aws
+aws proton
 axure rp
 azure
 azure devops
@@ -66,6 +70,7 @@ azure sentinel
 back-end development
 backbone.js
 backup solutions
+ballerina
 ballerina programming language
 bamboo
 bare metal development
@@ -83,9 +88,11 @@ biorender
 biotechnology
 bitbucket
 blender
+blitz.js
 blockchain
 blockchain nodes
 blockchain smart contracts
+bloodhound
 bloom filters
 bootstrap
 box api
@@ -95,8 +102,6 @@ burp suite
 business analysis
 business continuity
 business intelligence tools
- c
- c,
 c++
 c++ stl (standard template library)
 cacti (network monitoring)
@@ -128,6 +133,7 @@ cluster computing
 cmake
 cnc programming
 cobit
+cockroachdb
 code review
 cognitive load testing
 cognitive science
@@ -138,6 +144,8 @@ composable architecture
 computational biology
 computer vision
 confluence
+consul
+consul by hashicorp
 content delivery networks (cdn)
 content marketing
 continuous deployment
@@ -147,11 +155,14 @@ creative writing
 crisis management
 critical thinking
 cross-platform development
+crossplane
 cryptographic protocols
 cryptography
+crystal
 crystal programming language
 css
 customer data platforms (cdps)
+cyberchef
 cybersecurity
 cypress
 d3.js
@@ -159,6 +170,7 @@ dart programming
 data analysis
 data augmentation
 data bricks delta
+data build tool
 data cleansing
 data cubes
 data engineering
@@ -183,6 +195,7 @@ deep learning
 deep packet inspection (dpi)
 deeplabcut
 deepstream sdk
+delta lake
 dependency injection
 design systems development
 design thinking
@@ -203,6 +216,7 @@ docusign api
 doxygen
 driver development (e.g., windows, linux)
 drone ci
+duckdb
 dynamic analysis
 dynamic programming algorithms
 e-commerce
@@ -215,6 +229,7 @@ elasticsearch
 electrical engineering
 electron fiddle
 electron.js
+elixir
 embedded systems
 ember.js
 enterprise architecture frameworks
@@ -236,6 +251,7 @@ f# programming language
 fashion design
 fastapi
 fastlane
+faunadb
 federated learning
 fiber optics
 figma
@@ -250,6 +266,7 @@ flask
 flink cep (complex event processing)
 flutter
 flutterflow
+fluxcd
 forensics
 front-end development
 full-stack development
@@ -263,6 +280,8 @@ general data protection regulation (gdpr)
 genomics
 geojson
 git
+git
+github
 github
 gitlab
 gitops
@@ -274,11 +293,13 @@ google workspace
 graphic design
 graphql
 green computing
+groovy
 grpc
 gulp.js
 h2 database
 hadoop
 hana database
+harbor
 hardware description languages
 hashicorp consul
 haskell
@@ -300,6 +321,7 @@ human-computer interaction
 hyperledger
 hypervisors
 iaas
+iceberg tables
 identity and access management (iam)
 identity federation
 illustrator
@@ -353,15 +375,18 @@ kotlin
 kotlin multiplatform
 kubernetes
 kubernetes operators
+kubesphere
 landscape architecture
 laravel
 laravel nova
 leaflet.js
 lean manufacturing
+lens
 lightweight directory access protocol (ldap)
 linear programming
 linguistics
 linux
+lit
 literature
 live streaming protocols (rtmp, hls)
 llvm
@@ -408,12 +433,14 @@ nanotechnology
 natural language processing
 neo4j
 neovim
+nestjs
 network administration
 network automation tools
 network packet analysis
 network security
 neural networks
 neuroscience
+nim
 nist framework
 nltk
 nmap
@@ -424,6 +451,7 @@ numpy
 oauth 2.0
 observability
 observability pipelines
+octopus deploy
 open policy agent (opa)
 opencv
 opencv.js
@@ -452,6 +480,7 @@ pharmacology
 philosophy
 photography
 photoshop
+play framework 
 pluggable widgets development
 plutus (cardano smart contracts)
 policy as code
@@ -461,13 +490,16 @@ postgresql
 power bi
 powershell
 preprocessing techniques (ml)
+prestodb
 prestosql
+primeng
 problem solving
 product management
 project management
 proteomics
 proxmox ve
 psychology
+pulumi
 pulumi
 puppet
 pwa (progressive web apps)
@@ -480,6 +512,7 @@ quality control
 quantum computing
 quantum key distribution
 quarkus framework
+questdb
 r
 rabbitmq
 rabbitmq streams
@@ -494,6 +527,7 @@ redshift spectrum
 regression testing
 regulatory compliance
 reinforcement learning
+remix
 rescript
 rest apis
 risk management
@@ -510,35 +544,42 @@ sas programming
 scala
 scala.js
 scalability
+scheme
 scientific computing
 scrum
 secure coding
 security architecture
 selenium
 semantic web
+sentinelone
 seo
 server-sent events (sse)
 serverless compute (lambda functions)
 serverless framework
 sharepoint
 shell scripting
+shodan
 shopify development
 sidekiq
 sigfox
 signal processing
 sikuli
+singlestore
 site reliability engineering (sre)
 sitecore
 six sigma
 skaffold
 sketch
+sklear
 slack
+smalltalk
 smart contracts testing
 smart home automation
 snowflake
 social media
 sociology
 socket.io
+soda sql
 software architecture
 software defined networking (sdn)
 software engineering
@@ -552,6 +593,7 @@ sox compliance
 spacy
 spark
 speech recognition
+splunk phantom
 spring boot
 sql
 stakeholder management
@@ -559,18 +601,22 @@ static analysis
 streaming analytics
 streamlit
 supply chain management
+sveltekit
 swagger/openapi
 swift
+sysmon
 systems administration
 systems design
 systems engineering
 tableau
 tableau crm
 tableau prep
+tauri
 team leadership
 teamcity
 technical seo
 telemetry
+telepresence
 tensorflow
 terraform
 terraform cloud
@@ -580,6 +626,7 @@ test-driven development
 testrail
 threat modeling
 three.js
+tidb
 time management
 travis ci
 trello
@@ -598,6 +645,7 @@ ux research
 vagrant
 vault by hashicorp
 vega-lite
+velociraptor
 vercel
 video editing
 videography
@@ -610,6 +658,7 @@ vmware
 vue.js
 vulkan api
 vulnerability assessment
+vyper
 web design
 webassembly
 webauthn
@@ -629,4 +678,5 @@ xaas (anything as a service
 xamarin
 xslt (extensible stylesheet language transformations)
 yaml configuration management
+yugabytedb
 zoom
