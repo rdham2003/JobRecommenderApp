@@ -24,14 +24,6 @@ public class JobRecommenderAppApplication {
 		}
 	}
 	public static void main(String[] args) {
-//		SpringApplication.run(JobRecommenderAppApplication.class, args);
-		Service service = new Service();
-		service.printAPIData();
-		ArrayList<String> resumeData = new ResumeParser("Resume Base-SWE.pdf").parseResume();
-//		System.out.println(resumeData);
-		JSONObject jobData = service.makeCall("US", resumeData, "Minneapolis", 500, false);
-		JSONArray jobs = (JSONArray) jobData.get("results");
-		System.out.println(jobs);
-		System.out.println("Resume parsed successfully");
+		SpringApplication.run(JobRecommenderAppApplication.class, args);
 	}
 }

@@ -11,8 +11,9 @@ import lombok.*;
 @Setter
 @ToString
 public class Job {
-    private int jobId;
+    private long jobId;
     private String title;
+    private String company;
     private String description;
     private String location;
     private String job_url;

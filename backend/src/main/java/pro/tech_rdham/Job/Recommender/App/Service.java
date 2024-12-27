@@ -100,8 +100,15 @@ public class Service {
 
     public ArrayList<Job> getJobsFromJSON(JSONArray jobs){
         ArrayList<Job> jobData = new ArrayList<>();
-        for (JSONObject job: jobs){
-            Job newJob = new Job(job.get("created"))
+        for (int i = 0; i < jobs.length(); i++){
+            JSONObject job = jobs.getJSONObject(i);
+            Job newJob = new Job(job.getLong("id"), job.getString("title"), job.getJSONObject("company").getString("display_name"),
+                    job.getString("description"), job.getJSONObject("location").getString("display_name"),
+                    job.getString("redirect_url"), job.getString("created"),
+                    job.getFloat("salary_min"), job.getFloat("salary_max"));
+
+            jobData.add(newJob);
         }
+        return jobData;
     }
 }
