@@ -40,7 +40,7 @@ public class JobController {
         //        service.printAPIData();
         ArrayList<String> resumeData = new ResumeParser("userFile.pdf").parseResume();
         System.out.println(resumeData);
-        JSONObject jobData = service.makeCall("US", resumeData, "Wisconsin", 500, false);
+        JSONObject jobData = service.makeCall("US", resumeData, "California", 200, false);
         JSONArray jobs = (JSONArray) jobData.get("results");
         ArrayList<Job> jobList = service.getJobsFromJSON(jobs);
 //        System.out.println(jobList);

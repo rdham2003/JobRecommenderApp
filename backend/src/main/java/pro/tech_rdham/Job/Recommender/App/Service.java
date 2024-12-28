@@ -7,6 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.*;
@@ -102,13 +103,27 @@ public class Service {
         ArrayList<Job> jobData = new ArrayList<>();
         for (int i = 0; i < jobs.length(); i++){
             JSONObject job = jobs.getJSONObject(i);
-            Job newJob = new Job(job.getLong("id"), job.getString("title"), job.getJSONObject("company").getString("display_name"),
-                    job.getString("description"), job.getJSONObject("location").getString("display_name"),
-                    job.getString("redirect_url"), job.getString("created"),
-                    job.getFloat("salary_min"), job.getFloat("salary_max"));
-
+            long id;
+            String title;
+            String company;
+            String description;
+            String location;
+            String URL;
+            String date;
+            float min_sal;
+            float max_sal;
+            try { id = job.getLong("id"); } catch (JSONException e) { id = 0; }
+            try { title = job.getString("title"); } catch (JSONException e) { title = "No title found"; }
+            try { company = job.getJSONObject("company").getString("display_name"); } catch (JSONException e) { company = "No name found"; }
+            try { description = job.getString("description"); } catch (JSONException e) { description = "No description available"; }
+            try { location = job.getJSONObject("location").getString("display_name"); } catch (JSONException e) { location = "No location available"; }
+            try { URL = job.getString("redirect_url"); } catch (JSONException e) { URL = "No link available"; }
+            try { date = job.getString("created"); } catch (JSONException e) { date = "No date found"; }
+            try { min_sal = job.getFloat("salary_min"); } catch (JSONException e) { min_sal = 0; }
+            try { max_sal = job.getFloat("salary_max"); } catch (JSONException e) { max_sal = 0; }
+            Job newJob = new Job(id, title, company, description, location, URL, date, min_sal, max_sal);
             jobData.add(newJob);
-        }
+            }
         return jobData;
     }
 }
