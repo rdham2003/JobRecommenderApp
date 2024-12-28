@@ -14,6 +14,7 @@ public class readCSV {
             while (scanner.hasNextLine()) {
                 skills.put(scanner.nextLine(), 0);
             }
+            scanner.close();
             return skills;
         } catch (FileNotFoundException e) {
             System.out.println("CANT FIND FILE!!!!!!!!!");
