@@ -1,16 +1,9 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 a {
@@ -18,6 +11,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -25,9 +19,52 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  background-color: #f8f8ff !important;
+}
+
+header {
+  width: 100%;
+  background-color: #333; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.navbar .logo a {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_items {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  list-style: none;
+}
+
+.nav_items li {
+  margin-left: 2rem; 
+}
+
+.nav_items a {
+  text-decoration: none;
+  color: white; 
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav_items a:hover {
+  text-decoration: underline; 
 }
 
 h1 {
@@ -35,34 +72,28 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#title{
+  font-weight: bold;
+  color: black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.form_container{
+  display: block;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid black;
+  height: 500px;
+  width: 350px;
+  margin: auto;
 }
+
+#submit_container{
+  padding: 15px;
+}
+
+label{
+  font-size: 24px
+}
+
+
+

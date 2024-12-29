@@ -15,7 +15,11 @@ import java.util.List;
 @RequestMapping("/jobs")
 public class JobController {
     @PostMapping("/api")
-    public ResponseEntity<String> uploadPDF(@RequestParam("pdf") MultipartFile file){
+    public ResponseEntity<String> formSubmission(@RequestParam("pdf") MultipartFile file,
+                                            @RequestParam(name="jobType") String jobType,
+                                            @RequestParam(name = "country") String country,
+                                            @RequestParam(name = "location", required = false) String location,
+                                            @RequestParam(name = "distance", required = false) String distance){
         try {
             File temp = new File("userFile.pdf");
             InputStream input = file.getInputStream();
@@ -26,7 +30,8 @@ public class JobController {
                 output.write(buffer, 0, bytesRead);
             }
             output.close();
-            return ResponseEntity.status(HttpStatus.FOUND).header("Location", "/jobs/api").build();
+            String query = String.format("?jobType=%s&country=%s&location=%s&distance=%s", jobType, country, location, distance);
+            return ResponseEntity.status(HttpStatus.FOUND).header("Location", "/jobs/api" + query).build();
         }
             catch (Exception e) {
                 e.printStackTrace();
@@ -35,12 +40,17 @@ public class JobController {
     }
 
     @GetMapping("/api")
-    public ResponseEntity<List<Job>> jobPostings(){
+    public ResponseEntity<List<Job>> jobPostings(@RequestParam("jobType") String jobType,
+                                                 @RequestParam("country") String country,
+                                                 @RequestParam("location") String location,
+                                                 @RequestParam("distance") String distance){
         Service service = new Service();
         //        service.printAPIData();
         ArrayList<String> resumeData = new ResumeParser("userFile.pdf").parseResume();
         System.out.println(resumeData);
-        JSONObject jobData = service.makeCall("US", resumeData, "California", 200, false);
+        boolean isInternship = jobType.compareTo("internship") == 0;
+        int newDist = Integer.parseInt(distance);
+        JSONObject jobData = service.makeCall(country, resumeData, location, newDist, isInternship);
         JSONArray jobs = (JSONArray) jobData.get("results");
         ArrayList<Job> jobList = service.getJobsFromJSON(jobs);
 //        System.out.println(jobList);
