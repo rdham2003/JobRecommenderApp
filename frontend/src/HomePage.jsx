@@ -3,7 +3,7 @@ import Navbar from './navbar'
 
 function HomePage(){
     return(
-        <form action="/jobs" method="POST" encType='multitype/form-data'>
+        <form action="http://localhost:8080/jobs/api" method="POST" encType='multipart/form-data'>
             <Navbar/>
             <br />
             <h1 id="title">Find your dream job even faster!</h1>
