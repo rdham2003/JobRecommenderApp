@@ -95,5 +95,76 @@ label{
   font-size: 24px
 }
 
+.job_card {
+  display: block;
+  border: 2px solid black;
+  width: 18rem;
+  height: 25rem;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px grey;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden; 
+}
+
+.center_container {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+}
+
+.job_title {
+  font-size: 20px;
+  margin: 5px 0; 
+}
+
+.job_company {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.job_description {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.job_link {
+  font-size: 10px;
+  color: blue;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.job_link:hover {
+  text-decoration: underline;
+}
+
+.job_salary {
+  font-size: 12px;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.job_date {
+  font-size: 12px;
+  position: absolute;
+  top: 5%;
+}
+
+.job_location {
+  font-size: 12px;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+
 
 
