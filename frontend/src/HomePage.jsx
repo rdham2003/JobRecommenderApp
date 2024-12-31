@@ -2,6 +2,25 @@ import{useState, useEffect} from 'react'
 import Navbar from './navbar'
 
 function HomePage(){
+
+    const [jobType, setJobType] = useState("");
+    const [location, setLocation] = useState("");
+    const [country, setCountry] = useState("");
+    const [distance, setDistance] = useState("");
+
+    const inputChange = (e) => {
+        switch(e.target.id){
+            case "job":
+                setJobType(e.target.value);
+            case "location":
+                setLocation(e.target.value);
+            case "country":
+                setCountry(e.target.value);
+            case "distance":
+                setDistance(e.target.value);
+        }
+    }
+
     return(
         <form action="http://localhost:8080/jobs/api" method="POST" encType='multipart/form-data'>
             <Navbar/>
@@ -10,7 +29,7 @@ function HomePage(){
             <br />
             <div class="form_container">
                 <label>What type of Job are you looking for?</label>
-                <select name="jobType" id="" required>
+                <select name="jobType" id="jobType" onChange={inputChange} required>
                     <option value=""></option>
                     <option value="job">Job</option>
                     <option value="internship">Internship/Co-op</option>
@@ -19,9 +38,9 @@ function HomePage(){
                 <br />
                 <h4>Location</h4>
                 <label htmlFor="">Zip Code</label>
-                <input type="text" name="location" placeholder='e.g: 90210' required/>
+                <input type="text" name="location" id="location" onChange={inputChange} placeholder='e.g: 90210' required/>
                 <label htmlFor="">Country</label>
-                <select name="country" required>
+                <select name="country" id="country" onChange={inputChange} required>
                     <option value="us">us</option>
                     <option value="gb">gb</option>
                     <option value="at">at</option>
@@ -45,7 +64,7 @@ function HomePage(){
                 <br />
                 <label htmlFor="">Range (in km)</label>
                 <br />
-                <input type="number" name="distance" min="5" max="1000" placeholder='e.g. 200'/>
+                <input type="number" name="distance" id="distance" onChange={inputChange} min="5" max="1000" placeholder='e.g. 200'/>
                 <br />
                 <br />
                 <label>Upload Your Resume</label>
@@ -53,7 +72,7 @@ function HomePage(){
                 <input class="btn btn-primary" type="file" name="pdf" accept=".pdf" required/>
                 <br />
                 <div id="submit_container">
-                    <button class="btn btn-success" type='submit'>Find me Jobs</button>
+                    <button id="submit_button" class="btn btn-success" type='submit'>Find me Jobs</button>
                 </div>
             </div>
         </form>
