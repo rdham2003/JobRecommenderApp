@@ -1,17 +1,26 @@
 import{useState, useEffect} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Navbar from './navbar'
 import HomePage from './homepage'
 import Card from './Card'
-import axios from 'axios'
+import Jobs from './Jobs'
+
 
 function App() {
+  const [params, setParams] = useState({ jobType: "", country: "", location: "", distance: "" });
 
-  const url = "http://localhost:8080/jobs/api";
+  const handleCallBack = (newParams) => {
+    setParams(newParams); 
+    console.log(params);
+  };
 
   return (
-    // <Card></Card>
-    <HomePage></HomePage>
+    <div>
+      <Navbar/>
+      <HomePage onCallBack={handleCallBack} />
+      <Jobs params={params} />
+    </div>
   )
 }
 

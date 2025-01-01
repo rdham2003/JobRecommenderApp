@@ -1,45 +1,55 @@
-import{useState, useEffect, useRef} from 'react'
-import Navbar from './navbar'
+import {useState, useEffect, useRef} from 'react'
+import axios from 'axios'
 
-function HomePage(){
+function HomePage({onCallBack}){
     let [params, setParams] = useState({jobType: "", country: "", location: "", distance: ""})
     const jobTypeRef = useRef(null);
     const locationRef = useRef(null);
     const countryRef = useRef(null);
     const distanceRef = useRef(null);
     
+    let [file, setFile] = useState(null)
+
+    const handleFileChange = (e) => {
+        setFile(e.target.files[0]);
+    };
+    
     const updateParam = (K, V) => {
-        setParams((prev) => ({
-        ...prev,
-        [K]: V,
-        }));
-    }
+        setParams((prev) => {
+            const updatedParams = { ...prev, [K]: V };
+            onCallBack(updatedParams); 
+            return updatedParams;
+        });
+    };
 
     const inputChange = (e) => {
         updateParam(e.target.id, e.target.value);
-    //     switch(e.target.id){
-    //         case "jobType":
-    //             console.log(jobTypeRef.current?.value);
-    //             console.log(params.jobType);
-    //         case "location":
-    //             console.log(locationRef.current?.value);
-    //             console.log(params.location);
-    //         case "country":
-    //             console.log(countryRef.current?.value);
-    //             console.log(params.country);
-    //         case "distance":
-    //             console.log(distanceRef.current?.value);
-    //             console.log(params.distance);
-    // }
     };
 
-    function printProps(){
-        console.log(params)
-    }
+    const handleSubmission = async (e) => {
+        e.preventDefault();
+
+        const form = new FormData();
+        form.append('pdf', file);
+        form.append('jobType', params.jobType); 
+        form.append('country', params.country);
+        form.append('location', params.location);
+        form.append('distance', params.distance);
+        
+        try {
+            const response = await axios.post("http://localhost:8080/jobs/api", form, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            });
+            console.log(response.data); 
+        } catch (error) {
+            console.error('Error during form submission:', error);
+        }
+    };
     
     return(
-        <form action="http://localhost:8080/jobs/api" method="POST" encType='multipart/form-data'>
-            <Navbar/>
+        <form onSubmit={handleSubmission}>
             <br />
             <h1 id="title">Find your dream job even faster!</h1>
             <br />
@@ -86,10 +96,10 @@ function HomePage(){
                 <br />
                 <label>Upload Your Resume</label>
                 <br />
-                <input className="btn btn-primary" type="file" name="pdf" accept=".pdf" required/>
+                <input className="btn btn-primary" type="file" name="pdf" accept=".pdf" onChange={handleFileChange} required/>
                 <br />
                 <div id="submit_container">
-                    <button id="submit_button" onClick={printProps} className="btn btn-success" type='submit'>Find me Jobs</button>
+                    <button id="submit_button" className="btn btn-success" type='submit'>Find me Jobs</button>
                 </div>
             </div>
         </form>
