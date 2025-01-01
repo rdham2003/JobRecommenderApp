@@ -1,9 +1,9 @@
 function Navbar(){
     return(
         <header>
-            <nav class="navbar">
-                <h3 class="logo"><a href="">Job Recommender App</a></h3>
-                <ul class="nav_items">
+            <nav className="navbar">
+                <h3 className="logo"><a href="">Job Recommender App</a></h3>
+                <ul className="nav_items">
                     <li><a href="">Home</a></li>
                     <li><a href="">Sign Up</a></li>
                     <li><a href="">Login</a></li>
