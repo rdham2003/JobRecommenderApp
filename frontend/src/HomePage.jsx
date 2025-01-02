@@ -1,12 +1,16 @@
-import {useState, useEffect, useRef} from 'react'
+import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom';
 
-function HomePage({onCallBack}){
+function HomePage({onCallBack, onDataChange}){
     let [params, setParams] = useState({jobType: "", country: "", location: "", distance: ""})
+
     const jobTypeRef = useRef(null);
     const locationRef = useRef(null);
     const countryRef = useRef(null);
     const distanceRef = useRef(null);
+
+    const navigate = useNavigate();
     
     let [file, setFile] = useState(null)
 
@@ -42,7 +46,9 @@ function HomePage({onCallBack}){
                     'Content-Type': 'multipart/form-data',
                 },
             });
-            console.log(response.data); 
+            // console.log(response.data)
+            onDataChange(response.data);
+            navigate('/query/jobs');
         } catch (error) {
             console.error('Error during form submission:', error);
         }

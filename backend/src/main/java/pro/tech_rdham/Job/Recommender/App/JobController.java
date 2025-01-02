@@ -23,6 +23,7 @@ public class JobController {
                                             @RequestParam(name = "location", required = false) String location,
                                             @RequestParam(name = "distance", required = false) String distance){
         try {
+            System.out.println(jobType + ", " + country + ", " + location + ", " + distance);
             File temp = new File("userFile.pdf");
             InputStream input = file.getInputStream();
             FileOutputStream output = new FileOutputStream(temp);
