@@ -1,9 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
+import Card from './Card'
 
 function Jobs(data){
+    // console.log(data.data);
     return (
-        <h1>Hello World!</h1>
+        <div id="card_list">
+            {data.data.map((job) => (
+                <Card job={job}></Card>
+            ))}
+        </div>
     )
 }
 

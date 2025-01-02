@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './navbar'
 import HomePage from './homepage'
-import Card from './Card'
 import Jobs from './Jobs'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -21,9 +20,9 @@ function App() {
     setData(newData);
   }
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+  // useEffect(() => {
+  //   console.log(data);
+  // }, [data]);
 
   return (
     <Router>

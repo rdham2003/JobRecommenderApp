@@ -130,7 +130,7 @@ label{
 }
 
 .job_description {
-  font-size: 12px;
+  font-size: 10px;
   margin: 10px 0;
 }
 
@@ -163,6 +163,14 @@ label{
   position: absolute;
   bottom: 3%;
   right: 3%;
+}
+
+#card_list{
+  display: block;
+  height: 100%;
+  width: 100%;
+  float: left;
+  padding: 15px;
 }
 
 
