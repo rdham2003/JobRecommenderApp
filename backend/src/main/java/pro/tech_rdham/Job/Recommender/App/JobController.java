@@ -42,7 +42,8 @@ public class JobController {
             JSONObject jobData = service.makeCall(country, resumeData, location, newDist, isInternship);
             JSONArray jobs = (JSONArray) jobData.get("results");
             ArrayList<Job> jobList = service.getJobsFromJSON(jobs);
-            System.out.println(jobList);
+//            System.out.println(jobList);
+            System.out.println(jobList.size());
             System.out.println("Resume parsed successfully! Jobs being returned!");
             return ResponseEntity.ok(jobList);
         }
