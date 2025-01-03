@@ -44,7 +44,7 @@ public class Service {
             apiUrl.append(API_ID);
             apiUrl.append("&app_key=");
             apiUrl.append(API_KEY);
-            apiUrl.append("&results_per_page=50&what_or=intern%2C%20");
+            apiUrl.append("&results_per_page=100&what_or=intern%2C%20");
             apiUrl.append(skillset);
             apiUrl.append("&where=") ;
             apiUrl.append(location) ;
@@ -57,7 +57,7 @@ public class Service {
             apiUrl.append(API_ID);
             apiUrl.append("&app_key=");
             apiUrl.append(API_KEY);
-            apiUrl.append("&results_per_page=50&what_or=");
+            apiUrl.append("&results_per_page=100&what_or=");
             apiUrl.append(skillset);
             apiUrl.append("&where=") ;
             apiUrl.append(location) ;

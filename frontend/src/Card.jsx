@@ -29,7 +29,7 @@ function Card(job){
                 <h2 className="job_title">{job.job.title}</h2>
                 <p className="job_company">{job.job.company}</p>
                 <p className="job_description">{job.job.description.substring(0, 200) + "..."}</p>
-                <a href={job.job.job_url} target="_blank" className="job_link">More at: {job.job.job_url}</a>
+                <a href={job.job.job_url} target="_blank" className="job_link">More at: {job.job.job_url.substring(0,50)}</a>
             </div>
             <p className="job_salary">Avg. Salary: {salary}</p>
             <p className="job_date">{date_posted(job.job.job_posted)}</p>

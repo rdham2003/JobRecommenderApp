@@ -1,681 +1,407 @@
-a/b testing
-ab initio
-abap (advanced business application programming)
-accelerated mobile pages (amp)
-accounting
-active directory
-acumatica erp
-ada programming
-adonisjs
-agile
-agile testing
-airbyte
+a/b
+activemq
+adapter
+aiops
+aiplatform
 airflow
-airtable
-aix (advanced interactive executive)
-akka framework
-alerting
-alibaba cloud
-alteryx
-amazon redshift
-amazon sagemaker
+aks
+analytics
 android
-android jetpack
+androidstudio
 angular
-animation
 ansible
-ant design
-apache beam
-apache camel
-apache cassandra
-apache flink
-apache hudi
-apache ignite
-apache kafka streams
-apache mesos
-apache spark streaming
-apache superset
-apache tinkerpop
-api development
-api testing
-apm (application performance monitoring)
-appium
-apple arkit
-application development
-arangodb
-arcgis
-arduino
-argocd
-arkit
-arm architecture
-arm cortex development
-artificial intelligence
+appcenter
+appdynamics
+appengine
+architecture
+argo
+arm
+artillery
 asana
-asyncapi
-atlassian suite
-autocad
-autodesk revit
-automated deployment
+athena
+atom
+attention
+aurora
 automl
-avro
 aws
-aws proton
-axure rp
 azure
-azure devops
-azure logic apps
-azure machine learning
-azure pipelines
-azure sentinel
-back-end development
-backbone.js
-backup solutions
-ballerina
-ballerina programming language
 bamboo
-bare metal development
 bash
-bash script debugging
-behavior-driven development
-bi publisher
-big data
+batch
+bdd
+beam
+bert
 bigquery
-bioconductor
-bioinformatics
-bioinformatics pipelines
-biomedical engineering
-biorender
-biotechnology
+bigtable
 bitbucket
-blender
-blitz.js
-blockchain
-blockchain nodes
-blockchain smart contracts
-bloodhound
-bloom filters
-bootstrap
-box api
-bpmn (business process model and notation)
-bro/zeek network security
-burp suite
-business analysis
-business continuity
-business intelligence tools
+blazemeter
+botpress
+bridge
+bugsnag
+builder
+c
+c#
 c++
-c++ stl (standard template library)
-cacti (network monitoring)
-cad design
-camunda bpm
-capistrano
-carbon design system
-carbon footprint analysis tools
-carthage (ios dependency manager)
+cache
 cassandra
-cassandra cql (query language)
-chakra ui
-chemical engineering
-cheminformatics
-chisel (risc-v development)
-chisel hdl
-ci/cd
-circuit simulation
-citrix
-civil engineering
-clickhouse
-clojure
-cloud identity
-cloud security
+cdn
+celery
+cfengine
+chai
+chain
+chaosmonkey
+chatbot
+chatops
+chef
+circleci
+classification
+clean
+cleaning
 cloudformation
-cloudfront
-cloudtrail
-cluster computing
-cmake
-cnc programming
-cobit
-cockroachdb
-code review
-cognitive load testing
-cognitive science
-cognos analytics
-collaboration
-communication
-composable architecture
-computational biology
-computer vision
+cloudfunctions
+cloudrun
+cloudsql
+cloudstorage
+clustering
+cnn
+codebuild
+codedeploy
+codepipeline
+codestar
+colab
+command
+composite
+comprehend
 confluence
 consul
-consul by hashicorp
-content delivery networks (cdn)
-content marketing
-continuous deployment
-continuous integration
-couchbase
-creative writing
-crisis management
-critical thinking
-cross-platform development
+coreml
+cqrs
+crashlytics
+createml
 crossplane
-cryptographic protocols
-cryptography
-crystal
-crystal programming language
 css
-customer data platforms (cdps)
-cyberchef
-cybersecurity
+csv
+cucumber
+cv
 cypress
-d3.js
-dart programming
-data analysis
-data augmentation
-data bricks delta
-data build tool
-data cleansing
-data cubes
-data engineering
-data governance
-data governance tools
-data lakes
-data mesh
-data mining
-data pipelines
-data quality
-data visualization
-data warehousing
-database administration
-database development
-database security
+data
 databricks
 datadog
-dataiku
+dataflow
 dataops
-debian linux
-deep learning
-deep packet inspection (dpi)
-deeplabcut
-deepstream sdk
-delta lake
-dependency injection
-design systems development
-design thinking
-designops
-device drivers development
-device enrollment programs (dep)
+dataproc
+ddd
+decorator
+deepcomposer
+deeplens
+deepracer
+deployment
+design
 devops
-digital advertising
-digital forensics
-digital twins
-digitalocean
-disaster recovery
-distributed cache management
-distributed systems
+dialogflow
+dimensionality
 django
+dl
+dms
+dns
 docker
-docusign api
-doxygen
-driver development (e.g., windows, linux)
-drone ci
-duckdb
-dynamic analysis
-dynamic programming algorithms
-eagle pcb design
-economics
-eks (elastic kubernetes service)
-elastic beanstalk
-elastic load balancer (elb)
+documentdb
+driven
+dry
+dynamodb
+dynatrace
+ebs
+eclipse
+eda
+efs
+eks
 elasticsearch
-electrical engineering
-electron fiddle
-electron.js
-elixir
-embedded systems
-ember.js
-enterprise architecture frameworks
-environmental engineering
-erlang programming
-ethereum
-ethical hacking
+elk
+elt
+emacs
+embedding
+emr
+engineering
+enzyme
 etl
-etl testing
-etsi mec (multi-access edge computing)
-etsi nfv (network functions virtualization)
-event sourcing
-event storming
-event-driven architecture
-eventbridge
-exchange server
-exploratory data analysis (eda)
-f# programming language
-fashion design
-fastapi
-fastlane
-faunadb
-federated learning
-fiber optics
-figma
-filebeat
-film production
-financial analysis
-finite element analysis (fea)
-firebase functions
-firmware engineering
-flame graphs
+event
+eventsourcing
+excel
+experimentation
+express
+facade
+factory
+fargate
+feature
+finops
+firebase
+firehose
+firestore
+firewall
 flask
-flink cep (complex event processing)
-flutter
-flutterflow
-fluxcd
-forensics
-front-end development
-full-stack development
-functional programming
-game design
-game development
-game engines optimization
-gatling performance testing
-gdpr compliance
-general data protection regulation (gdpr)
-genomics
-geojson
+flink
+flume
+flyweight
+forecast
+gan
+gatling
+gcp
+gherkin
 git
-git
-github
 github
 gitlab
 gitops
-google analytics
-google bigtable
-google cloud
-google pub/sub
-google workspace
-graphic design
+gke
+glacier
+glue
+go
+gpt
+grafana
 graphql
-green computing
-groovy
+graylog
+gremlin
 grpc
-gulp.js
-h2 database
 hadoop
-hana database
-harbor
-hardware description languages
-hashicorp consul
-haskell
-heatmap visualization tools
-helix core
-helm charts
+hbase
+helm
 heroku
-high availability
-high throughput computing (htc)
-high-performance computing (hpc)
-hipaa compliance
-history
-hootsuite
+hexagonal
+hibernate
+hive
 html
-hubspot
-hugging face
-human factors engineering
-human-computer interaction
-hyperledger
-hypervisors
-iaas
-iceberg tables
-identity and access management (iam)
-identity federation
-illustrator
-incident management
-incident response
-indesign
-indexeddb
-industrial design
-industrial engineering
-information security
-infrastructure as code (iac)
-infura api
-interactive brokers api
-interior design
+http
+https
+intellij
+interpreter
 ios
-iot
-iot core (google/aws)
-iot edge computing
-ip routing protocols
-ipfs (interplanetary file system)
-iso 27001
-iso 27002
-istio service mesh
-itil
+ip
+istio
+iterator
 java
-java native interface (jni)
 javascript
 jenkins
-jenkins pipelines
 jest
-jetpack compose
-jinja2 templates
 jira
-journalism
-json web tokens (jwt)
-julia programming language
-jupyter notebooks
+jmeter
+jpa
+json
+junit
+jupyter
+jwt
+k6
 kafka
-kaldi asr toolkit
-kanban
-kaniko
 keras
-key management systems (kms)
-keycloak
 kibana
-knative
-knime analytics platform
-knowledge graphs
-knowledge-based systems
+kinesis
+kiss
 kotlin
-kotlin multiplatform
+kubeflow
 kubernetes
-kubernetes operators
-kubesphere
-landscape architecture
-laravel
-laravel nova
-leaflet.js
-lean manufacturing
-lens
-lightweight directory access protocol (ldap)
-linear programming
-linguistics
+kustomize
+lambda
+latex
+layered
+ldap
+lex
+linkerd
 linux
-lit
-literature
-live streaming protocols (rtmp, hls)
-llvm
-load testing
-logging
-logistic regression models
-logistics
+loadbalancer
+loadrunner
+locust
 logstash
-lottie animations
-machine learning
-mapreduce programming
-marketing
-marklogic
-materials science
+looker
+lstm
+luis
+macos
+mapreduce
+markdown
 matlab
-matlab simulink
-maya
-mechanical engineering
-mercury framework
-mern stack
-mesh networking
-metabase
-metasploit
-micro-frontends
-microcontrollers programming (mcus)
+matplotlib
+mediator
+memcached
+memento
+memorystore
 microservices
-microsoft graph api
-microsoft intune
-microsoft sentinel
-microsoft teams
-midi programming
-minikube
+mlflow
+mlkit
 mlops
-mobile app development
+mocha
+modeling
 mongodb
 monitoring
-motion graphics
-motion layout (android)
-multi-factor authentication (mfa)
-multithreading and concurrency
-music production
+monolith
+mvc
+mvp
+mvvm
 mysql
-nanotechnology
-natural language processing
+nagios
+nats
+natural
 neo4j
-neovim
-nestjs
-network administration
-network automation tools
-network packet analysis
-network security
-neural networks
-neuroscience
-nim
-nist framework
-nltk
-nmap
-node.js
-nosql
-notion
+neptune
+netbeans
+newrelic
+nifi
+nlp
+node
+nomad
+noops
+nose
 numpy
-oauth 2.0
-observability
-observability pipelines
-octopus deploy
-open policy agent (opa)
-opencv
-opencv.js
+oauth
+observer
+octopus
+onion
+oozie
 openshift
-openstack
-opentelemetry
-operational technology (ot) security
-operations research
-optical character recognition (ocr)
-osint (open source intelligence)
-owasp
-paas
-packer by hashicorp
+opsgenie
+oracle
+orchestration
+packer
+pagerduty
 pandas
-parameterized testing
-pci dss compliance
-peer-to-peer networking
-pega bpm
-penetration testing
-pentaho
-performance optimization
-performance testing
-performing arts
-personalization algorithms
-pharmacology
-philosophy
-photography
-photoshop
-play framework 
-pluggable widgets development
-plutus (cardano smart contracts)
-policy as code
-political science
-polymer.js
+patterns
+perl
+personalize
+php
+pig
+pipeline
+polly
 postgresql
-power bi
-powershell
-preprocessing techniques (ml)
-prestodb
-prestosql
-primeng
-problem solving
-product management
-project management
-proteomics
-proxmox ve
-psychology
+postman
+powerbi
+preprocessing
+prometheus
+prototype
+proxy
+pubsub
+pulsar
 pulumi
-pulumi
+pumba
 puppet
-pwa (progressive web apps)
+pytest
 python
 pytorch
-qemu
-qt framework
-quality assurance
-quality control
-quantum computing
-quantum key distribution
-quarkus framework
-questdb
+qldb
+qlik
+quicksight
 r
 rabbitmq
-rabbitmq streams
-radial basis function networks (rbfn)
-rapidminer
-raspberry pi
+rancher
+rasa
+raygun
+rds
 react
-react native
 redis
-redis streams
-redshift spectrum
-regression testing
-regulatory compliance
-reinforcement learning
-remix
-rescript
-rest apis
-risk management
-robot operating system (ros)
-ruby on rails
+redshift
+reduction
+regression
+rekognition
+repository
+responsibility
+rest
+rl
+rnn
+robot
+rollbar
+rstudio
+ruby
+rundeck
 rust
-rust tokio
-saas
-saas multi-tenant architecture
-salesforce
-sap erp
-sap hana xs advanced
-sas programming
+s3
+sagemaker
+saltstack
+saml
+samza
+sas
 scala
-scala.js
-scalability
-scheme
-scientific computing
-scrum
-secure coding
-security architecture
+scikit-learn
+scipy
+seaborn
+secops
 selenium
-semantic web
-sentinelone
-seo
-server-sent events (sse)
-serverless compute (lambda functions)
-serverless framework
-sharepoint
-shell scripting
-shodan
-shopify development
-sidekiq
-sigfox
-signal processing
-sikuli
-singlestore
-site reliability engineering (sre)
-sitecore
-six sigma
-skaffold
-sketch
-sklear
+sentry
+serverless
+service
+sheets
+shell
+simianarmy
+singleton
+skill
 slack
-smalltalk
-smart contracts testing
-smart home automation
 snowflake
-social media
-sociology
-socket.io
-soda sql
-software architecture
-software defined networking (sdn)
-software engineering
-software security
-software testing
-solidity
-solidworks
-sonarqube
-sound engineering
-sox compliance
-spacy
+soa
+soap
+soapui
+solid
+solr
+spanner
 spark
-speech recognition
-splunk phantom
-spring boot
+specflow
+speech
+spinnaker
+splunk
+spring
+spss
 sql
-stakeholder management
-static analysis
-streaming analytics
-streamlit
-supply chain management
-sveltekit
-swagger/openapi
+sqlalchemy
+sqlite
+sqoop
+ssl
+stata
+state
+stepfunctions
+storm
+strategy
+streams
+sublime
 swift
-sysmon
-systems administration
-systems design
-systems engineering
 tableau
-tableau crm
-tableau prep
-tauri
-team leadership
+taurus
+tcp
+tdd
 teamcity
-technical seo
-telemetry
-telepresence
+tekton
+template
 tensorflow
 terraform
-terraform cloud
-terraform modules
-test automation
-test-driven development
-testrail
-threat modeling
-three.js
-tidb
-time management
-travis ci
+testflight
+testing
+testng
+text
+timestream
+tls
+toxiproxy
+transcribe
+transformer
+translate
+translation
+travisci
 trello
-twilio api
+turi
 typescript
-ui design
-unity
-unity ml-agents
-unity shader graph
-unreal engine
-unreal engine blueprints
-unsupervised learning algorithms
-urban planning
-ux design
-ux research
+udp
+unittest
+unix
 vagrant
-vault by hashicorp
-vega-lite
-velociraptor
-vercel
-video editing
-videography
-virtual reality development
-virtualization
-visual arts
-visual basic for applications (vba)
-vlsi design
-vmware
-vue.js
-vulkan api
-vulnerability assessment
-vyper
-web design
-webassembly
-webauthn
-webex
-webflow
-webgl
-webgpu
-webrtc
-websocket api
-websockets
-wi-fi 6
-windows presentation foundation (wpf)
-windows server
-wireless security
-wireshark
-xaas (anything as a service
-xamarin
-xslt (extensible stylesheet language transformations)
-yaml configuration management
-yugabytedb
-zoom
+vault
+vertexai
+victorops
+vim
+vision
+visitor
+visualization
+vpn
+vscode
+vue
+websocket
+windows
+wit
+workflow
+xcode
+xml
+yagni
+yaml
+zabbix
+zeromq
+zookeeper

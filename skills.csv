@@ -1,693 +1,1408 @@
-a/b testing
-ab initio
-abap (advanced business application programming)
-accelerated mobile pages (amp)
-accounting
-active directory
-acumatica erp
-ada programming
-adonisjs
-agile
-agile testing
-airflow
-airtable
-aix (advanced interactive executive)
-akka framework
-alerting
-alibaba cloud
-alteryx
-amazon redshift
-amazon sagemaker
-android
-android jetpack
-angular
-animation
-ansible
-ant design
-apache beam
-apache camel
-apache cassandra
-apache flink
-apache ignite
-apache kafka streams
-apache mesos
-apache spark streaming
-apache superset
-apache tinkerpop
-api development
-api testing
-apm (application performance monitoring)
-appium
-apple arkit
-application development
-arcgis
-architecture
-arduino
-arkit
-arm architecture
-arm cortex development
-artificial intelligence
-asana
-asyncapi
-atlassian suite
-autocad
-autodesk revit
-automated deployment
-automl
-avro
-aws
-axure rp
-azure
-azure devops
-azure logic apps
-azure machine learning
-azure pipelines
-azure sentinel
-back-end development
-backbone.js
-backup solutions
-ballerina programming language
-bamboo
-bare metal development
-bash
-bash script debugging
-behavior-driven development
-bi publisher
-big data
-bigquery
-bioconductor
-bioinformatics
-bioinformatics pipelines
-biomedical engineering
-biorender
-biotechnology
-bitbucket
-blender
-blockchain
-blockchain nodes
-blockchain smart contracts
-bloom filters
-bootstrap
-box api
-bpmn (business process model and notation)
-bro/zeek network security
-burp suite
-business analysis
-business continuity
-business intelligence tools
-c++
-c++ stl (standard template library)
-cacti (network monitoring)
-cad design
-camunda bpm
-capistrano
-carbon design system
-carbon footprint analysis tools
-carthage (ios dependency manager)
-cassandra
-cassandra cql (query language)
-chakra ui
-chemical engineering
-cheminformatics
-chisel (risc-v development)
-chisel hdl
-ci/cd
-circuit simulation
-citrix
-civil engineering
-clickhouse
-clojure
-cloud identity
-cloud security
-cloudformation
-cloudfront
-cloudtrail
-cluster computing
-cmake
-cnc programming
-cobit
-code review
-cognitive load testing
-cognitive science
-cognos analytics
-collaboration
-communication
-composable architecture
-computational biology
-computer vision
-confluence
-content delivery networks (cdn)
-content marketing
-continuous deployment
-continuous integration
-couchbase
-creative writing
-crisis management
-critical thinking
-cross-platform development
-cryptographic protocols
-cryptography
-crystal programming language
-css
-customer data platforms (cdps)
-cybersecurity
-cypress
-d3.js
-dart programming
-data analysis
-data augmentation
-data bricks delta
-data cleansing
-data cubes
-data engineering
-data governance
-data governance tools
-data lakes
-data mesh
-data mining
-data pipelines
-data quality
-data visualization
-data warehousing
-database administration
-database development
-database security
-databricks
-datadog
-dataiku
-dataops
-debian linux
-deep learning
-deep packet inspection (dpi)
-deeplabcut
-deepstream sdk
-dependency injection
-design systems development
-design thinking
-designops
-device drivers development
-device enrollment programs (dep)
-devops
-digital advertising
-digital forensics
-digital twins
-digitalocean
-disaster recovery
-distributed cache management
-distributed systems
-django
-docker
-docusign api
-doxygen
-driver development (e.g., windows, linux)
-drone ci
-dynamic analysis
-dynamic programming algorithms
-e-commerce
-eagle pcb design
-economics
-eks (elastic kubernetes service)
-elastic beanstalk
-elastic load balancer (elb)
-elasticsearch
-electrical engineering
-electron fiddle
-electron.js
-embedded systems
-ember.js
-enterprise architecture frameworks
-environmental engineering
-erlang programming
-ethereum
-ethical hacking
-etl
-etl testing
-etsi mec (multi-access edge computing)
-etsi nfv (network functions virtualization)
-event sourcing
-event storming
-event-driven architecture
-eventbridge
-exchange server
-exploratory data analysis (eda)
-f# programming language
-fashion design
-fastapi
-fastlane
-federated learning
-fiber optics
-figma
-filebeat
-film production
-financial analysis
-finite element analysis (fea)
-firebase functions
-firmware engineering
-flame graphs
-flask
-flink cep (complex event processing)
-flutter
-flutterflow
-forensics
-front-end development
-full-stack development
-functional programming
-game design
-game development
-game engines optimization
-gatling performance testing
-gdpr compliance
-general data protection regulation (gdpr)
-genomics
-geojson
-git
-github
-gitlab
-gitops
-google analytics
-google bigtable
-google cloud
-google pub/sub
-google workspace
-graphic design
-graphql
-green computing
-grpc
-gulp.js
-h2 database
-hadoop
-hana database
-hardware description languages
-hashicorp consul
-haskell
-heatmap visualization tools
-helix core
-helm charts
-heroku
-high availability
-high throughput computing (htc)
-high-performance computing (hpc)
-hipaa compliance
-history
-hootsuite
-html
-hubspot
-hugging face
-human factors engineering
-human-computer interaction
-hyperledger
-hypervisors
-iaas
-identity and access management (iam)
-identity federation
-illustrator
-incident management
-incident response
-indesign
-indexeddb
-industrial design
-industrial engineering
-information security
-infrastructure as code (iac)
-infura api
-interactive brokers api
-interior design
-ios
-iot
-iot core (google/aws)
-iot edge computing
-ip routing protocols
-ipfs (interplanetary file system)
-iso 27001
-iso 27002
-istio service mesh
-itil
-java
-java native interface (jni)
-javascript
-jenkins
-jenkins pipelines
-jest
-jetpack compose
-jinja2 templates
-jira
-journalism
-json web tokens (jwt)
-julia programming language
-jupyter notebooks
-kafka
-kaldi asr toolkit
-kanban
-kaniko
-keras
-key management systems (kms)
-keycloak
-kibana
-knative
-knime analytics platform
-knowledge graphs
-knowledge-based systems
-kotlin
-kotlin multiplatform
-kubernetes
-kubernetes operators
-landscape architecture
-laravel
-laravel nova
-leaflet.js
-lean manufacturing
-lightweight directory access protocol (ldap)
-linear programming
-linguistics
-linux
-literature
-live streaming protocols (rtmp, hls)
-llvm
-load testing
-logging
-logistic regression models
-logistics
-logstash
-lottie animations
-machine learning
-mapreduce programming
-marketing
-marklogic
-materials science
-matlab
-matlab simulink
-maya
-mechanical engineering
-mercury framework
-mern stack
-mesh networking
-metabase
-metasploit
-micro-frontends
-microcontrollers programming (mcus)
-microservices
-microsoft graph api
-microsoft intune
-microsoft sentinel
-microsoft teams
-midi programming
-minikube
-mlops
-mobile app development
-mongodb
-monitoring
-motion graphics
-motion layout (android)
-multi-factor authentication (mfa)
-multithreading and concurrency
-music production
-mysql
-nanotechnology
-natural language processing
-neo4j
-neovim
-network administration
-network automation tools
-network packet analysis
-network security
-neural networks
-neuroscience
-nist framework
-nltk
-nmap
-node.js
-nosql
-notion
-numpy
-oauth 2.0
-observability
-observability pipelines
-open policy agent (opa)
-opencv
-opencv.js
-openshift
-openstack
-opentelemetry
-operational technology (ot) security
-operations research
-optical character recognition (ocr)
-osint (open source intelligence)
-owasp
-paas
-packer by hashicorp
-pandas
-parameterized testing
-pci dss compliance
-peer-to-peer networking
-pega bpm
-penetration testing
-pentaho
-performance optimization
-performance testing
-performing arts
-personalization algorithms
-pharmacology
-philosophy
-photography
-photoshop
-pluggable widgets development
-plutus (cardano smart contracts)
-policy as code
-political science
-polymer.js
-postgresql
-power bi
-powershell
-preprocessing techniques (ml)
-prestosql
-problem solving
-product management
-project management
-proteomics
-proxmox ve
-psychology
-pulumi
-puppet
-pwa (progressive web apps)
-python
-pytorch
-qemu
-qt framework
-quality assurance
-quality control
-quantum computing
-quantum key distribution
-quarkus framework
-r
-rabbitmq
-rabbitmq streams
-radial basis function networks (rbfn)
-rapidminer
-raspberry pi
-react
-react native
-redis
-redis streams
-redshift spectrum
-regression testing
-regulatory compliance
-reinforcement learning
-rescript
-rest apis
-risk management
-robot operating system (ros)
-ruby on rails
-rust
-rust tokio
-saas
-saas multi-tenant architecture
-salesforce
-sap erp
-sap hana xs advanced
-sas programming
-scala
-scala.js
-scalability
-scientific computing
-scrum
-secure coding
-security architecture
-selenium
-semantic web
-seo
-server-sent events (sse)
-serverless compute (lambda functions)
-serverless framework
-sharepoint
-shell scripting
-shopify development
-sidekiq
-sigfox
-signal processing
-sikuli
-site reliability engineering (sre)
-sitecore
-six sigma
-skaffold
-sketch
-slack
-smart contracts testing
-smart home automation
-snowflake
-social media
-sociology
-socket.io
-software architecture
-software defined networking (sdn)
-software engineering
-software security
-software testing
-solidity
-solidworks
-sonarqube
-sound engineering
-sox compliance
-spacy
-spark
-speech recognition
-spring boot
-sql
-stakeholder management
-static analysis
-streaming analytics
-streamlit
-supply chain management
-swagger/openapi
-swift
-systems administration
-systems design
-systems engineering
-tableau
-tableau crm
-tableau prep
-team leadership
-teamcity
-technical seo
-telemetry
-tensorflow
-terraform
-terraform cloud
-terraform modules
-test automation
-test-driven development
-testrail
-threat modeling
-three.js
-time management
-travis ci
-trello
-twilio api
-typescript
-ui design
-unity
-unity ml-agents
-unity shader graph
-unreal engine
-unreal engine blueprints
-unsupervised learning algorithms
-urban planning
-ux design
-ux research
-vagrant
-vault by hashicorp
-vega-lite
-vercel
-video editing
-videography
-virtual reality development
-virtualization
-visual arts
-visual basic for applications (vba)
-vlsi design
-vmware
-vue.js
-vulkan api
-vulnerability assessment
-web design
-webassembly
-webauthn
-webex
-webflow
-webgl
-webgpu
-webrtc
-websocket api
-websockets
-wi-fi 6
-windows presentation foundation (wpf)
-windows server
-wireless security
-wireshark
-xaas (anything as a service
-xamarin
-xslt (extensible stylesheet language transformations)
-yaml configuration management
-zoom
-Vyper
-Ballerina
-Crystal
-Groovy
-Nim
-Elixir
-Smalltalk
-Scheme
-Remix
-Blitz.js
-Lit
-Play Framework 
-NestJS
-SvelteKit
-PrimeNG
-Tauri
-Crossplane
-ArgoCD
-FluxCD
-Harbor
-Consul
-Telepresence
-Octopus Deploy
-AWS Proton
-Pulumi
-Kubesphere
-Lens
-TiDB
-YugabyteDB
-FaunaDB
-SingleStore
-ArangoDB
-CockroachDB
-DuckDB
-QuestDB
-Crossplane
-ArgoCD
-FluxCD
-Harbor
-Consul by HashiCorp
-Telepresence
-Octopus Deploy
-AWS Proton
-Pulumi
-Kubesphere
-Lens
-Airbyte
-Apache Hudi
-Delta Lake
-PrestoDB
-Iceberg Tables
-Data Build Tool
-Soda SQL
-BloodHound
-CyberChef
-SentinelOne
-Splunk Phantom
-Sysmon
-Velociraptor
-Shodan
+Skill
+Python
+Java
+JavaScript
+C++
+C#
+Ruby
+PHP
+Swift
+Kotlin
+Go
+Rust
+Scala
+Perl
+R
+SQL
+HTML
+CSS
+TypeScript
+Bash
+Shell
+MATLAB
+Django
+Flask
+Spring
+React
+Angular
+Vue
+Node
+Express
+TensorFlow
+PyTorch
+Keras
+Scikit-learn
+Pandas
+NumPy
+SciPy
+Matplotlib
+Seaborn
+Hadoop
+Spark
+Kafka
+Airflow
+Docker
+Kubernetes
+Terraform
+Ansible
+Jenkins
 Git
-Github
-Sklearn
+GitHub
+GitLab
+Bitbucket
+Jira
+Confluence
+Slack
+Trello
+Asana
+AWS
+Azure
+GCP
+Firebase
+Heroku
+Linux
+Windows
+macOS
+Unix
+iOS
+Android
+Xcode
+AndroidStudio
+Eclipse
+IntelliJ
+VSCode
+NetBeans
+Sublime
+Atom
+Vim
+Emacs
+LaTeX
+Markdown
+JSON
+XML
+YAML
+CSV
+SQLAlchemy
+Hibernate
+JPA
+REST
+GraphQL
+SOAP
+gRPC
+WebSocket
+OAuth
+JWT
+SAML
+LDAP
+SSL
+TLS
+HTTP
+HTTPS
+TCP
+UDP
+IP
+DNS
+CDN
+VPN
+Firewall
+Proxy
+LoadBalancer
+Cache
+Redis
+Memcached
+MongoDB
+MySQL
+PostgreSQL
+SQLite
+Oracle
+Cassandra
+Elasticsearch
+Solr
+Neo4j
+DynamoDB
+BigQuery
+Redshift
+Snowflake
+DataBricks
+Tableau
+PowerBI
+Looker
+Qlik
+Excel
+Sheets
+SPSS
+SAS
+Stata
+RStudio
+Jupyter
+Colab
+Hadoop
+MapReduce
+Pig
+Hive
+HBase
+Zookeeper
+Oozie
+Sqoop
+Flume
+Storm
+Flink
+Samza
+Beam
+NiFi
+Kafka
+RabbitMQ
+ActiveMQ
+ZeroMQ
+Celery
+RabbitMQ
+NATS
+Pulsar
+Prometheus
+Grafana
+Nagios
+Zabbix
+Splunk
+ELK
+Graylog
+Logstash
+Kibana
+Datadog
+NewRelic
+AppDynamics
+Dynatrace
+PagerDuty
+OpsGenie
+VictorOps
+Sentry
+Rollbar
+Raygun
+BugSnag
+Crashlytics
+Firebase
+AppCenter
+TestFlight
+Selenium
+Cypress
+JUnit
+TestNG
+Mocha
+Chai
+Jest
+Enzyme
+Pytest
+Unittest
+Nose
+Robot
+Cucumber
+Gherkin
+SpecFlow
+Postman
+SoapUI
+JMeter
+LoadRunner
+Gatling
+BlazeMeter
+Artillery
+Locust
+K6
+Taurus
+ChaosMonkey
+Gremlin
+SimianArmy
+Pumba
+Toxiproxy
+Istio
+Linkerd
+Consul
+Vault
+Nomad
+Packer
+Vagrant
+Chef
+Puppet
+SaltStack
+CFEngine
+Rundeck
+Spinnaker
+Argo
+Tekton
+CircleCI
+TravisCI
+Bamboo
+TeamCity
+Octopus
+CodePipeline
+CodeBuild
+CodeDeploy
+CodeStar
+CloudFormation
+ARM
+Pulumi
+Crossplane
+Kustomize
+Helm
+Rancher
+OpenShift
+EKS
+AKS
+GKE
+Fargate
+Lambda
+StepFunctions
+Batch
+Glue
+Athena
+EMR
+Dataflow
+Dataproc
+PubSub
+CloudRun
+AppEngine
+CloudFunctions
+Firestore
+Bigtable
+Spanner
+CloudSQL
+Memorystore
+CloudStorage
+S3
+EBS
+EFS
+Glacier
+RDS
+Aurora
+Neptune
+DocumentDB
+Timestream
+QLDB
+DMS
+Kinesis
+Firehose
+Streams
+Analytics
+QuickSight
+SageMaker
+Comprehend
+Rekognition
+Polly
+Lex
+Transcribe
+Translate
+Personalize
+Forecast
+DeepLens
+DeepRacer
+DeepComposer
+AutoML
+VertexAI
+AIPlatform
+MLFlow
+Kubeflow
+Turi
+CoreML
+CreateML
+MLKit
+Vision
+Natural
+Speech
+Text
+Translation
+Dialogflow
+Rasa
+Botpress
+Wit
+Luis
+Lex
+Chatbot
+NLP
+CV
+DL
+RL
+GAN
+CNN
+RNN
+LSTM
+BERT
+GPT
+Transformer
+Attention
+Embedding
+Clustering
+Classification
+Regression
+Dimensionality
+Reduction
+Feature
+Engineering
+Data
+Cleaning
+Preprocessing
+EDA
+Visualization
+Modeling
+Deployment
+Monitoring
+A/B
+Testing
+Experimentation
+Pipeline
+Workflow
+Orchestration
+ETL
+ELT
+DataOps
+MLOps
+DevOps
+SecOps
+FinOps
+AIOps
+GitOps
+ChatOps
+NoOps
+Serverless
+Microservices
+Monolith
+SOA
+Event
+Driven
+Architecture
+Design
+Patterns
+SOLID
+DRY
+KISS
+YAGNI
+TDD
+BDD
+DDD
+CQRS
+EventSourcing
+Hexagonal
+Clean
+Architecture
+MVC
+MVVM
+MVP
+Layered
+Onion
+Repository
+Service
+Factory
+Singleton
+Observer
+Strategy
+Decorator
+Adapter
+Proxy
+Facade
+Builder
+Prototype
+Chain
+Command
+Interpreter
+Iterator
+Mediator
+Memento
+State
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template
+Visitor
+Flyweight
+Bridge
+Composite
+Proxy
+Facade
+Decorator
+Adapter
+Command
+Chain
+Responsibility
+Interpreter
