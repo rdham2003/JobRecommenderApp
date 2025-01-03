@@ -4,7 +4,7 @@ function Card(job){
     // console.log(job);
     function date_posted(date){
         let newDate = "";
-        console.log(date.substring(5,7));
+        // console.log(date.substring(5,7));
         switch(date.substring(5,7)){
             case "01": newDate+="January "; break;
             case "02": newDate+="February "; break;
