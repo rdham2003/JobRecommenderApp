@@ -13,10 +13,8 @@ ansible
 appcenter
 appdynamics
 appengine
-architecture
 argo
 arm
-artillery
 asana
 athena
 atom
@@ -121,7 +119,6 @@ elt
 emacs
 embedding
 emr
-engineering
 enzyme
 etl
 event
@@ -236,7 +233,6 @@ mvvm
 mysql
 nagios
 nats
-natural
 neo4j
 neptune
 netbeans

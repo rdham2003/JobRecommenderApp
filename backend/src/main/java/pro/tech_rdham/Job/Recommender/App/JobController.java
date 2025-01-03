@@ -43,7 +43,7 @@ public class JobController {
             JSONArray jobs = (JSONArray) jobData.get("results");
             ArrayList<Job> jobList = service.getJobsFromJSON(jobs);
             System.out.println(jobList);
-            System.out.println("Resume parsed successfully");
+            System.out.println("Resume parsed successfully! Jobs being returned!");
             return ResponseEntity.ok(jobList);
         }
             catch (Exception e) {
