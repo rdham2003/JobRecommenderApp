@@ -65,6 +65,7 @@ public class ResumeParser{
                 strCat.put(entry.getKey(), strCatag);
             }
 //            System.out.println(getUserSkills(skills, strCat));
+            parsable.close();
             return getUserSkills(skills, strCat);
         }
         catch(Exception E){

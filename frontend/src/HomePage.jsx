@@ -33,6 +33,9 @@ function HomePage({onCallBack, onDataChange}){
     const handleSubmission = async (e) => {
         e.preventDefault();
 
+        document.getElementById('spinner_container').style.visibility = 'visible'
+        document.getElementById('form_container').style.height = '600px';
+
         const form = new FormData();
         form.append('pdf', file);
         form.append('jobType', params.jobType); 
@@ -59,7 +62,7 @@ function HomePage({onCallBack, onDataChange}){
             <br />
             <h1 id="title">Find your dream job even faster!</h1>
             <br />
-            <div className="form_container">
+            <div className="form_container" id="form_container">
                 <label>What type of Job are you looking for?</label>
                 <select name="jobType" id="jobType" ref={jobTypeRef} value={params.jobType} onChange={inputChange} required>
                     <option value=""></option>
@@ -106,6 +109,10 @@ function HomePage({onCallBack, onDataChange}){
                 <br />
                 <div id="submit_container">
                     <button id="submit_button" className="btn btn-success" type='submit'>Find me Jobs</button>
+                </div>
+                <div id='spinner_container'>
+                    <h3>Parsing Resume...</h3>
+                    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
                 </div>
             </div>
         </form>
