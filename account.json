@@ -1,0 +1,124 @@
+[
+    {
+        "username": "rdhammpls",
+        "password": "password1234",
+        "email": "dham0011@umn.edu",
+        "resume_data": ["python", "java", "javascript", "typescript", "c", "c++", "sql", "mongodb", "html", "css", "json", "pytorch"],
+        "jobs": [
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305983,
+                "job_posted": "2025-01-01",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            },
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305984,
+                "job_posted": "2025-01-02",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            },
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305985,
+                "job_posted": "2025-01-03",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            }
+        ]
+    },
+    {
+        "username": "rdhammpls",
+        "password": "password1234", 
+        "email": "dham0011@umn.edu",
+        "resume_data": ["python", "java", "javascript", "typescript", "c", "c++", "sql", "mongodb", "html", "css", "json", "pytorch"],
+        "jobs": [
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305983,
+                "job_posted": "2025-01-01",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            },
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305984,
+                "job_posted": "2025-01-02",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            },
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305985,
+                "job_posted": "2025-01-03",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            }
+        ]
+    },{
+        "username": "rdhammpls",
+        "password": "password1234", 
+        "email": "dham0011@umn.edu",
+        "resume_data": ["python", "java", "javascript", "typescript", "c", "c++", "sql", "mongodb", "html", "css", "json", "pytorch"],
+        "jobs": [
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305983,
+                "job_posted": "2025-01-01",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            },
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305984,
+                "job_posted": "2025-01-02",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            },
+            {
+                "company": "Cognizant",
+                "description": "Work",
+                "jobId": 558305985,
+                "job_posted": "2025-01-03",
+                "job_url": "http://tech-rdham.pro",
+                "location": "Eagan, MN",
+                "min_salary": 252040.24,
+                "max_salary": 320153.25,
+                "title": "AWS DevOps Role"
+            }
+        ]
+    }
+]

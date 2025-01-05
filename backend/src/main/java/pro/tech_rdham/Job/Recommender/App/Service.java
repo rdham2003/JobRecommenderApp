@@ -18,10 +18,14 @@ public class Service {
 
     public String API_ID = dotenv.get("API_ID");
     public String API_KEY = dotenv.get("API_KEY");
+    public String DB_USER = dotenv.get("DB_USER");
+    public String DB_PASS = dotenv.get("DB_PASS");
 
     public void printAPIData(){
         System.out.println(API_ID);
         System.out.println(API_KEY);
+        System.out.println(DB_USER);
+        System.out.println(DB_PASS);
     }
 
     public JSONObject makeCall(String country, ArrayList<String> skills, String location, int distance, boolean isInternship){
