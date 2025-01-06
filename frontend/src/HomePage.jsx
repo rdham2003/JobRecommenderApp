@@ -112,7 +112,7 @@ function HomePage({onCallBack, onDataChange}){
                 </div>
                 <div id='spinner_container'>
                     <h3>Parsing Resume...</h3>
-                    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                    <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
                 </div>
             </div>
         </form>

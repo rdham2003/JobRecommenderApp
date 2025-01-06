@@ -1,19 +1,16 @@
 import { useState, useEffect, useRef, Fragment } from 'react';
+import axios from 'axios';
 import Card from './Card'
 
 function Jobs(data){
     const [jobArr, setJobArr] = useState(data.data);
 
-    const handleSave = async () => {
+    const handleSave = async (e) => {
+        e.preventDefault();
         if (jobArr.length > 0) {
-            const form = new FormData()
-            form.append('job', jobArr.append[0]);
-            const response = await axios.post("http://localhost:8080/jobs/save", form, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                },
-            });
-            console.log(response);
+            console.log("hi")
+            const response = await axios.get("http://localhost:8080/users/data");
+            console.log(response.data);
             setJobArr(jobArr.slice(1));
         }
     }

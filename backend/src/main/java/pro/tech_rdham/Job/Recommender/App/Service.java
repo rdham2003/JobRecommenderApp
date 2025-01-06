@@ -20,12 +20,16 @@ public class Service {
     public String API_KEY = dotenv.get("API_KEY");
     public String DB_USER = dotenv.get("DB_USER");
     public String DB_PASS = dotenv.get("DB_PASS");
+    public String DB_NAME = dotenv.get("DB_NAME");
+    public String DB_URI = dotenv.get("DB_URI");
 
     public void printAPIData(){
         System.out.println(API_ID);
         System.out.println(API_KEY);
         System.out.println(DB_USER);
         System.out.println(DB_PASS);
+        System.out.println(DB_NAME);
+        System.out.println(DB_URI);
     }
 
     public JSONObject makeCall(String country, ArrayList<String> skills, String location, int distance, boolean isInternship){

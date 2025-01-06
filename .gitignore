@@ -38,3 +38,4 @@ out/
 
 ### DOTENV ###
 .env
+backend/src/main/resources/application.properties

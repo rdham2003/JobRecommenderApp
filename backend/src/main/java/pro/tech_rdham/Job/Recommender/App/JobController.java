@@ -53,11 +53,6 @@ public class JobController {
             }
     }
 
-    @PostMapping("/save")
-    public ResponseEntity<String> saveJobToDB(@RequestParam("job") JSONObject job){
-
-    }
-
 //    @GetMapping("/api")
 //    public ResponseEntity<List<Job>> jobPostings(@RequestParam("jobType") String jobType,
 //                                                 @RequestParam("country") String country,
