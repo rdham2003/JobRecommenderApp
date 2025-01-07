@@ -37,7 +37,7 @@ function Jobs({ data, isLogged }){
         <Fragment>
             <div id="card_list">
                 <form onSubmit={handleSave}>
-                    <button className="btn btn-success" id="save">{isLogged ? "Sign in to save" : "Save this job"}</button>
+                    <button className="btn btn-success" id="save">{isLogged ? "Save this job" : "Sign in to save"}</button>
                 </form>
                 <button className="btn btn-success" id="remove" onClick={removeJob}>Not interested!</button>
                 
