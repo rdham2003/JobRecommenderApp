@@ -1,14 +1,21 @@
 import { useState, useEffect, useRef, Fragment } from 'react';
 import axios from 'axios';
 import Card from './Card'
+import { useNavigate } from 'react-router-dom';
 
-function Jobs(data){
-    const [jobArr, setJobArr] = useState(data.data);
+function Jobs({ data, isLogged }){
+    const [jobArr, setJobArr] = useState(data);
+
+    const navigate = useNavigate();
 
     const handleSave = async (e) => {
         e.preventDefault();
+        console.log(isLogged);
+        if (!isLogged){
+            navigate("/login")
+        }
         if (jobArr.length > 0) {
-            console.log("hi")
+            // console.log("hi")
             const response = await axios.get("http://localhost:8080/users/data");
             console.log(response.data);
             setJobArr(jobArr.slice(1));
@@ -30,7 +37,7 @@ function Jobs(data){
         <Fragment>
             <div id="card_list">
                 <form onSubmit={handleSave}>
-                    <button className="btn btn-success" id="save">Save this Job</button>
+                    <button className="btn btn-success" id="save">{isLogged ? "Sign in to save" : "Save this job"}</button>
                 </form>
                 <button className="btn btn-success" id="remove" onClick={removeJob}>Not interested!</button>
                 
