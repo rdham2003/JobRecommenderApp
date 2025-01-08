@@ -8,18 +8,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @Document(collection = "accounts")
 public class User {
-    @Id
-    private ObjectId id;
     private String username;
     private String password;
     private String email;
     private List<String> resume_data;
     private List<Job> jobs;
-
 }

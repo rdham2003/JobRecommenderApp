@@ -36,7 +36,10 @@ function App() {
   // }, [data]);
 
   useEffect(() => {
-    isLoggedIn();
+    const interval = setInterval(() => {
+      isLoggedIn();
+    }, 500)
+    return () => clearInterval(interval);
   }, [])
 
   useEffect(() => {

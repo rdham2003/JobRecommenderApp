@@ -256,6 +256,11 @@ label{
   height: 680px;
 }
 
+#login_error{
+  color: red;
+  visibility: hidden;
+}
+
 
 
 

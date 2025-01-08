@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react'
+import axios from 'axios';
 
 function SignUp(){
     const [email, setEmail] = useState("");
@@ -24,6 +25,15 @@ function SignUp(){
 
     const handleSubmission = async(e) => {
         e.preventDefault();
+
+        const form = new FormData();
+        form.append("email", email);
+        form.append("username", username);
+        form.append("password", password);
+
+        const response = await axios.post("http://localhost:8080/users/signup", form);
+
+        console.log(response.data)
     }
     
     const generatePass = () => {
@@ -109,11 +119,11 @@ function SignUp(){
                     <button type="button" class="btn btn-primary" onClick={generatePass}>Generate Password</button>
                     <br />
                     <br />
-                        <button id="submit_button" className="btn btn-success" type='submit'>Log In</button>
+                        <button id="submit_button" className="btn btn-success" type='submit'>Sign Up</button>
                     </div>
                     <div id="submit_container">
                         <p>Already have an account?</p>
-                        <button id="submit_button" className="btn btn-success" type='submit' onClick={() => navigate("/login")}>Sign Up</button>
+                        <button id="submit_button" className="btn btn-success" type='button' onClick={() => navigate("/login")}>Log In</button>
                     </div>
                 </div>
             </form>
