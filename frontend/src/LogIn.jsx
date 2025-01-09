@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 
-function LogIn({onCallBack}){
+function LogIn({onCallBack, onCallBack2}){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [pass, setPass] = useState(true);
@@ -26,6 +26,7 @@ function LogIn({onCallBack}){
         }
         else{
             onCallBack(response.data.username);
+            onCallBack2(response.data.email);
             navigate("/");
         }
     }
@@ -60,12 +61,12 @@ function LogIn({onCallBack}){
                     <div class="mb-3">
                         <br />
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" value={email} name="email" onChange={handleEmailChange} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                        <input type="email" value={email} name="email" onChange={handleEmailChange} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required/>
                     </div>
                     <div class="mb-3">
                         <br />
                         <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input type="password" value={password} name="password" onChange={handlePassChange} class="form-control" id="pass"/>
+                        <input type="password" value={password} name="password" onChange={handlePassChange} class="form-control" id="pass" required/>
                     </div>
                     <div id="submit_container">
                     <button id="submit_button" className="btn btn-secondary" type='button' onClick={showPassword}>

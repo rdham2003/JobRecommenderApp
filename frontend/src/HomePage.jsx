@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 
-function HomePage({onCallBack, onDataChange}){
+function HomePage({onCallBack, onDataChange, username}){
     let [params, setParams] = useState({jobType: "", country: "", location: "", distance: ""})
 
     const jobTypeRef = useRef(null);

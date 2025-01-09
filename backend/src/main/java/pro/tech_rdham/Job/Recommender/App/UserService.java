@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -25,5 +26,15 @@ public class UserService {
 
     public User getUsername(String username){
         return repo.findByUsername(username).orElse(null);
+    }
+
+    public User saveJobtoUserDB(String email, Job job){
+        User user = repo.findByEmail(email).orElse(null);
+        System.out.println(user);
+        assert user != null;
+        List<Job> jobs = user.getJobs();
+        jobs.add(job);
+        user.setJobs(jobs);
+        return repo.save(user);
     }
 }

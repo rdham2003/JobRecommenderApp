@@ -1,8 +1,8 @@
 import{ useState, useEffect } from 'react'
 
-function Wishlist(){
+function Wishlist({username, email}){
     return (
-        <h1>Wishlist</h1>
+        <h1><b>{username}'s jobs:</b></h1>
     )
 }
 

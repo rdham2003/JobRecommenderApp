@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react'
 import axios from 'axios';
 
-function SignUp({onCallBack}){
+function SignUp({onCallBack, onCallBack2}){
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -41,6 +41,7 @@ function SignUp({onCallBack}){
         }
         else{
             onCallBack(response.data.username);
+            onCallBack2(response.data.email);
             navigate("/");
         }
     }
@@ -99,17 +100,17 @@ function SignUp({onCallBack}){
                     <div class="mb-3">
                         <br />
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" value={email} name="email" onChange={handleEmailChange} class="form-control" id="exampleFormControlInput1" placeholder="e.g. name@example.com" />
+                        <input type="email" value={email} name="email" onChange={handleEmailChange} class="form-control" id="exampleFormControlInput1" placeholder="e.g. name@example.com" required/>
                     </div>
                     <div class="mb-3">
                         <br />
                         <label for="exampleFormControlInput1" class="form-label">Username</label>
-                        <input value={username} name="username" type="text" onChange={handleUserChange} class="form-control" id="exampleFormControlInput1" placeholder="e.g. exampleName1234" />
+                        <input value={username} name="username" type="text" onChange={handleUserChange} class="form-control" id="exampleFormControlInput1" placeholder="e.g. exampleName1234" required/>
                     </div>
                     <div class="mb-3">
                         <br />
                         <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input value={password} name="password" onChange={handlePassChange} type="password" class="form-control" id="pass" placeholder="" />
+                        <input value={password} name="password" onChange={handlePassChange} type="password" class="form-control" id="pass" placeholder="" required/>
                     </div>
                     <div id="submit_container">
                     <button id="submit_button" className="btn btn-secondary" type='button' onClick={showPassword}>

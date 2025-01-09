@@ -10,10 +10,9 @@ import java.lang.Boolean;
 @Controller
 @CrossOrigin(origins = "http://localhost:3000")
 public class HomeController {
-    public static boolean isLoggedIn = false;
     @GetMapping("/")
-    public ResponseEntity<Boolean> homePage() {
+    public ResponseEntity<String> homePage() {
 
-        return ResponseEntity.ok(isLoggedIn);
+        return ResponseEntity.ok("Hello World!");
     }
 }
