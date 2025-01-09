@@ -261,6 +261,11 @@ label{
   visibility: hidden;
 }
 
+#signup_error{
+  color: red;
+  visibility: hidden;
+}
+
 
 
 

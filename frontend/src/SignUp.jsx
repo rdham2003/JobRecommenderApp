@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react'
 import axios from 'axios';
 
-function SignUp(){
+function SignUp({onCallBack}){
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -34,6 +34,15 @@ function SignUp(){
         const response = await axios.post("http://localhost:8080/users/signup", form);
 
         console.log(response.data)
+
+        if (response.data == ""){
+            document.getElementById("signup_error").style.visibility = "visible";
+            document.getElementById("signup_container").style.height = "750px";
+        }
+        else{
+            onCallBack(response.data.username);
+            navigate("/");
+        }
     }
     
     const generatePass = () => {
@@ -125,6 +134,7 @@ function SignUp(){
                         <p>Already have an account?</p>
                         <button id="submit_button" className="btn btn-success" type='button' onClick={() => navigate("/login")}>Log In</button>
                     </div>
+                    <h1 id="signup_error">Error! Account with email already exists!</h1>
                 </div>
             </form>
         </Fragment>

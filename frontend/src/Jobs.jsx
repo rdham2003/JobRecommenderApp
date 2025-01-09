@@ -3,7 +3,7 @@ import axios from 'axios';
 import Card from './Card'
 import { useNavigate } from 'react-router-dom';
 
-function Jobs({ data, isLogged }){
+function Jobs({ data, isLogged, username }){
     const [jobArr, setJobArr] = useState(data);
 
     const navigate = useNavigate();
@@ -16,7 +16,9 @@ function Jobs({ data, isLogged }){
         }
         if (jobArr.length > 0) {
             // console.log("hi")
-            const response = await axios.get("http://localhost:8080/users/data");
+            const form = new FormData();
+            form.append("username", username)
+            const response = await axios.post("http://localhost:8080/users/save_job", form);
             console.log(response.data);
             setJobArr(jobArr.slice(1));
         }

@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 
-function LogIn(){
+function LogIn({onCallBack}){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [pass, setPass] = useState(true);
@@ -25,6 +25,7 @@ function LogIn(){
             document.getElementById("login_container").style.height = "600px";
         }
         else{
+            onCallBack(response.data.username);
             navigate("/");
         }
     }

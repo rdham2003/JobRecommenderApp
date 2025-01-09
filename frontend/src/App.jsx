@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 function App() {
+  const [username, setUsername] = useState(null)
   const [params, setParams] = useState({ jobType: "", country: "", location: "", distance: "" });
   const [data, setData] = useState(null);
   const [isLogged, setIsLogged] = useState(false)
@@ -31,6 +32,14 @@ function App() {
     setData(newData);
   }
 
+  const handleLogIn = (newUser) => {
+    setUsername(newUser);
+  }
+
+  useEffect(() => {
+    console.log(username);
+  },[username])
+
   // useEffect(() => {
   //   console.log(data);
   // }, [data]);
@@ -38,7 +47,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       isLoggedIn();
-    }, 500)
+    }, 10)
     return () => clearInterval(interval);
   }, [])
 
@@ -53,10 +62,10 @@ function App() {
         {isLogged ? <NavbarLoggedIn/> : <Navbar/>}
         <Routes>
           <Route path="/" element={<HomePage onCallBack={handleCallBack} onDataChange={handleData} />} />
-          <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/login" element={<LogIn/>}/>
+          <Route path="/signup" element={<SignUp onCallBack={handleLogIn}/>}/>
+          <Route path="/login" element={<LogIn onCallBack={handleLogIn}/>}/>
           <Route path="/user/wishlist" element={<Wishlist/>}/>
-          <Route path="/query/jobs" element={<Jobs data={data} isLogged = {isLogged}/>} />
+          <Route path="/query/jobs" element={<Jobs data={data} isLogged = {isLogged} username={username}/>} />
         </Routes>
       </div>
     </Router>

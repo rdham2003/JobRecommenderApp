@@ -16,10 +16,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/data")
-    public ResponseEntity<User> getUserData(){
+    @PostMapping("/save_job")
+    public ResponseEntity<User> getUserData(@RequestParam("username") String username){
         System.out.println("Hi");
-        User user = userService.getUser("677af0d997f8066190e04704");
+        User user = userService.getUsername(username);
         System.out.println(user);
         return ResponseEntity.ok(user);
     }
@@ -47,11 +47,13 @@ public class UserController {
                                       @RequestParam("username") String username,
                                       @RequestParam("password") String password){
         User user = userService.getUser(email);
+        System.out.println(user);
         if (user != null){
             return null;
         }
         else{
-            User newUser = new User(email, username, password, new ArrayList<>(), new ArrayList<>());
+            User newUser = new User(username, password, email, new ArrayList<>(), new ArrayList<>());
+            isLoggedIn = true;
             return ResponseEntity.ok(userService.saveToDB(newUser));
         }
     }
