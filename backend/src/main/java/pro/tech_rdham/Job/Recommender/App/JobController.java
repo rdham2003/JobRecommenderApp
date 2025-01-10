@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
@@ -18,13 +21,18 @@ import java.util.List;
 public class JobController {
     @PostMapping("/api")
     public ResponseEntity<List<Job>> formSubmission(@RequestParam("pdf") MultipartFile file,
-                                            @RequestParam(name="jobType") String jobType,
-                                            @RequestParam(name = "country") String country,
-                                            @RequestParam(name = "location", required = false) String location,
-                                            @RequestParam(name = "distance", required = false) String distance){
+                                                    @RequestParam(name = "jobType") String jobType,
+                                                    @RequestParam(name = "country") String country,
+                                                    @RequestParam(name = "location", required = false) String location,
+                                                    @RequestParam(name = "distance", required = false) String distance) {
+        Path tempFilePath = null;
         try {
             System.out.println(jobType + ", " + country + ", " + location + ", " + distance);
-            File temp = new File("userFile.pdf");
+            Random random = new Random();
+            String tmpfilenum = Integer.toString(random.nextInt((9999999-1000000)+1));
+            tempFilePath = Files.createTempFile("userFile-" + tmpfilenum, ".pdf");
+            System.out.println(tempFilePath);
+            File temp = tempFilePath.toFile();
             InputStream input = file.getInputStream();
             FileOutputStream output = new FileOutputStream(temp);
             byte[] buffer = new byte[20000];
@@ -35,9 +43,9 @@ public class JobController {
             output.close();
             Service service = new Service();
             //        service.printAPIData();
-            ArrayList<String> resumeData = new ResumeParser("userFile.pdf").parseResume();
+            ArrayList<String> resumeData = new ResumeParser(temp.getAbsolutePath()).parseResume();
             System.out.println(resumeData);
-            if (resumeData.isEmpty()){
+            if (resumeData.isEmpty()) {
                 return null;
             }
             boolean isInternship = jobType.compareTo("internship") == 0;
@@ -49,12 +57,21 @@ public class JobController {
             System.out.println(jobList.size());
             System.out.println("Resume parsed successfully! Jobs being returned!");
             return ResponseEntity.ok(jobList);
-        }
-            catch (Exception e) {
-                e.printStackTrace();
-                return null;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        } finally {
+            // Ensure temp file is deleted after processing
+            if (tempFilePath != null) {
+                try {
+                    Files.deleteIfExists(tempFilePath);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+        }
     }
+}
 
 //    @GetMapping("/api")
 //    public ResponseEntity<List<Job>> jobPostings(@RequestParam("jobType") String jobType,
@@ -91,4 +108,3 @@ public class JobController {
 //    private String createRedirectLink(String jobType, String country, String location, String distance){
 //        return "http://localhost:3000/jobs/query/?jobType=" + jobType + "&country=" + country + "&location=" + location + "&distance=" + distance;
 //    }
-}
