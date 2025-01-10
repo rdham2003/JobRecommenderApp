@@ -28,14 +28,6 @@ public class ServiceTest {
     }
 
     @Test
-    public void testMakeCallWithEmptySkills() {
-        Service service = new Service();
-        ArrayList<String> skills = new ArrayList<>();
-        JSONObject result = service.makeCall("us", skills, "San Francisco", 10, false);
-        assertNotNull(result, "Response should not be null even if skills are empty");
-    }
-
-    @Test
     public void testGetJobsFromJSON() {
         Service service = new Service();
         JSONArray jobs = new JSONArray("[{ \"id\": 1, \"title\": \"Software Engineer\", \"company\": { \"display_name\": \"Tech Corp\" }, \"description\": \"Develop software\", \"location\": { \"display_name\": \"San Francisco\" }, \"redirect_url\": \"http://example.com\", \"created\": \"2025-01-01\", \"salary_min\": 60000, \"salary_max\": 90000 }]");

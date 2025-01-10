@@ -16,7 +16,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/save_job")
-    public ResponseEntity<User> getUserData(@RequestParam("email") String email,
+    public ResponseEntity<User> saveJob(@RequestParam("email") String email,
                                             @RequestParam("jobId") long jobId,
                                             @RequestParam("title") String title,
                                             @RequestParam("company") String company,
@@ -30,6 +30,17 @@ public class UserController {
         System.out.println(job);
         User user = userService.saveJobtoUserDB(email, job);
         return ResponseEntity.ok(user);
+    }
+
+    @PostMapping("/delete_job")
+    public ResponseEntity<User> deleteJob(@RequestParam("email") String email,
+                                          @RequestParam("jobId") long jobId){
+        User user = userService.getUser(email);
+        List<Job> jobs = user.getJobs();
+        jobs.removeIf(job -> job.getJobId() == jobId);
+        user.setJobs(jobs);
+        User newUser = userService.saveToDB(user);
+        return ResponseEntity.ok(newUser);
     }
 
 

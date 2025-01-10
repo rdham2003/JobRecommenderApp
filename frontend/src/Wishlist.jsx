@@ -6,6 +6,11 @@ function Wishlist({username, email, joblist}){
 
     const [jobs, setJobs] = useState(JSON.parse(joblist))
 
+    const handleLogIn3 = (jobs) => {
+        setJobs(jobs);
+        localStorage.setItem("joblist", JSON.stringify(jobs));
+      }
+
     useEffect(() => {
         console.log(jobs);
     }, [jobs]);
@@ -16,7 +21,7 @@ function Wishlist({username, email, joblist}){
             <br />
             <div id="saved_cards">
                 {jobs.map((job) => {
-                    return <SavedCard job={job}/>
+                    return <SavedCard job={job} onCallBack3={handleLogIn3}/>
                 })}
             </div>
         </Fragment>

@@ -64,8 +64,8 @@ function App() {
           <Route path="/" element={<HomePage onCallBack={handleCallBack} onDataChange={handleData} username={username} />} />
           <Route path="/signup" element={<SignUp onCallBack={handleLogIn} onCallBack2={handleLogIn2} onCallBack3={handleLogIn3}/>} />
           <Route path="/login" element={<LogIn onCallBack={handleLogIn} onCallBack2={handleLogIn2} onCallBack3={handleLogIn3}/>} />
-          <Route path="/user/jobs" element={<Wishlist username={username} email={email} joblist={joblist} />} />
-          <Route path="/query/jobs" element={<Jobs data={data} isLogged={isLogged} email={email} />} />
+          <Route path="/user/jobs" element={<Wishlist username={username} email={email} joblist={joblist} onCallBack3={handleLogIn3}/>} />
+          <Route path="/query/jobs" element={<Jobs data={data} isLogged={isLogged} email={email} onCallBack3={handleLogIn3}/>} />
           <Route path="/error" element={<ErrorPage/>}/>
         </Routes>
       </div>

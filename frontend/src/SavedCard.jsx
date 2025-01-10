@@ -1,6 +1,7 @@
 import { Fragment } from "react";
+import axios from "axios";
 
-function SavedCard(job){
+function SavedCard({job, onCallBack3}){
     function date_posted(date){
         let newDate = "";
         switch(date.substring(5,7)){
@@ -20,22 +21,30 @@ function SavedCard(job){
         newDate+=date.substring(8,10) + ", " + date.substring(0,4);
         return newDate;
     }
+    const salary = job.min_salary == job.max_salary  ? `$${(job.min_salary).toFixed(2)}` : `$${(job.min_salary).toFixed(2)}-${(job.max_salary).toFixed(2)}`
 
-    const salary = job.job.min_salary == job.job.max_salary ? `$${(job.job.min_salary).toFixed(2)}` : `$${(job.job.min_salary).toFixed(2)}-${(job.job.max_salary).toFixed(2)}`
+    const delete_job = async () => {
+        const form = new FormData();
+        form.append("email", localStorage.getItem("email"));
+        form.append("jobId", job.jobId);
+        const response = await axios.post("http://localhost:8080/users/delete_job", form);
+        console.log(response.data.jobs);
+        onCallBack3(response.data.jobs);
+    }
 
     return(
         <Fragment>
             <div className="saved_card">
                 <div className="center_container">
-                    <h2 className="new_job_title">{job.job.title}</h2>
-                    <p className="new_job_company">{job.job.company}</p>
-                    <p className="new_job_description">{job.job.description.substring(0, 200) + "..."}</p>
-                    <a href={job.job.job_url} target="_blank" className="new_job_link">More at: {job.job.job_url.substring(0,50)}</a>
+                    <h2 className="new_job_title">{job.title}</h2>
+                    <p className="new_job_company">{job.company}</p>
+                    <p className="new_job_description">{job.description.substring(0, 200) + "..."}</p>
+                    <a href={job.job_url} target="_blank" className="new_job_link">More at: {job.job_url.substring(0,50)}</a>
                 </div>
                 <p className="new_job_salary">Avg. Salary: {salary}</p>
-                <p className="new_job_date">{date_posted(job.job.job_posted)}</p>
-                <p className="new_job_location">{job.job.location}</p>
-                <button className="btn btn-success" id="delete_job">Delete Job</button>
+                <p className="new_job_date">{date_posted(job.job_posted)}</p>
+                <p className="new_job_location">{job.location}</p>
+                <button className="btn btn-success" id="delete_job" onClick={delete_job}>Delete Job</button>
             </div>
         </Fragment>
     )

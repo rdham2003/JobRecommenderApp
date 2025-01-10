@@ -3,7 +3,7 @@ import axios from 'axios';
 import Card from './Card'
 import { useNavigate } from 'react-router-dom';
 
-function Jobs({ data, isLogged, email }){
+function Jobs({ data, isLogged, email, onCallBack3 }){
     const [jobArr, setJobArr] = useState(data);
 
     const navigate = useNavigate();
@@ -31,7 +31,7 @@ function Jobs({ data, isLogged, email }){
                 console.log(`${key}: ${value}`);
             }
             const response = await axios.post("http://localhost:8080/users/save_job", form);
-            console.log(response.data);
+            onCallBack3(response.data.jobs);
             setJobArr(jobArr.slice(1));
         }
     }
@@ -56,7 +56,7 @@ function Jobs({ data, isLogged, email }){
                 <button className="btn btn-success" id="remove" onClick={removeJob}>Not interested!</button>
                 
                 {jobArr.length > 0 ? ( 
-                    <Card job={jobArr[0]}/>
+                    <Card job={jobArr[0]} onCallBack3={onCallBack3}/>
                     ) : 
                     <h1>No more jobs! Upload a different resume or try again soon.</h1>
                 }

@@ -39,7 +39,7 @@ public class JobController {
             int bytesRead;
             while ((bytesRead = input.read(buffer)) != -1) {
                 output.write(buffer, 0, bytesRead);
-            }
+            }   
             output.close();
             Service service = new Service();
             //        service.printAPIData();
