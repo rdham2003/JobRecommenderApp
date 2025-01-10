@@ -30,6 +30,7 @@ public class ResumeParser{
             String resumeData = new PDFTextStripper().getText(parsable);
 //            System.out.println(resumeData);
             String[] data = resumeData.split("\r\n");
+
 //            System.out.println(Arrays.toString(data));
 
             for (int i = 0; i < data.length; i++){
@@ -40,11 +41,12 @@ public class ResumeParser{
             }
 
             for (int i = 0; i < data.length; i++){
-                boolean value = inHashMap(data[i], buzzwords);
+                String element = data[i].replaceAll("\\s", "");
+                boolean value = inHashMap(element, buzzwords);
                 if (value){
-                    String key = getKeyOfValue(data[i], buzzwords);
+                    String key = getKeyOfValue(element, buzzwords);
                     i++;
-                    while (!(inHashMap(data[i], buzzwords))){
+                    while (!(inHashMap(data[i].replaceAll("\\s", ""), buzzwords))){
                         categories.get(key).add(data[i]);
                         i++;
                         if (i == data.length){

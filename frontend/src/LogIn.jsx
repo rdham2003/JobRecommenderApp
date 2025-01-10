@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 
-function LogIn({onCallBack, onCallBack2}){
+function LogIn({onCallBack, onCallBack2, onCallBack3}){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [pass, setPass] = useState(true);
@@ -18,15 +18,14 @@ function LogIn({onCallBack, onCallBack2}){
 
         const response = await axios.post("http://localhost:8080/users/login", form);
 
-        console.log(response.data);
-
         if (response.data == ""){
             document.getElementById("login_error").style.visibility = "visible";
-            document.getElementById("login_container").style.height = "600px";
+            document.getElementById("login_container").style.height = "640px";
         }
         else{
             onCallBack(response.data.username);
             onCallBack2(response.data.email);
+            onCallBack3(response.data.jobs);
             navigate("/");
         }
     }
@@ -48,7 +47,6 @@ function LogIn({onCallBack, onCallBack2}){
              document.getElementById("pass").type = "password"
              setPass(true)
         }
-        console.log(document.getElementById("pass").type == "password")
     }
 
     return (

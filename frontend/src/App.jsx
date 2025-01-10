@@ -3,11 +3,12 @@ import Navbar from './navbar'
 import NavbarLoggedIn from './NavbarLoggedIn'
 import HomePage from './homepage'
 import Jobs from './Jobs'
-import axios from 'axios'
 import SignUp from './SignUp'
 import LogIn from './LogIn'
 import Wishlist from './Wishlist'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import ErrorPage from "./ErrorPage"
+
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   const [params, setParams] = useState({ jobType: "", country: "", location: "", distance: "" });
   const [data, setData] = useState(null);
   const [isLogged, setIsLogged] = useState(localStorage.getItem("isLogged") === 'true');
+  const [joblist, setJoblist] = useState(localStorage.getItem("joblist") || null);
 
   const handleCallBack = (newParams) => {
     setParams(newParams);
@@ -24,6 +26,10 @@ function App() {
   const handleData = (newData) => {
     setData(newData);
   }
+
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
 
   const handleLogIn = (newUser) => {
     setUsername(newUser);
@@ -35,6 +41,11 @@ function App() {
   const handleLogIn2 = (newUser) => {
     setEmail(newUser);
     localStorage.setItem("email", newUser);
+  }
+
+  const handleLogIn3 = (jobs) => {
+    setJoblist(jobs);
+    localStorage.setItem("joblist", JSON.stringify(jobs));
   }
 
   const logOut = () => {
@@ -51,10 +62,11 @@ function App() {
         {isLogged ? <NavbarLoggedIn logOut={logOut} /> : <Navbar />}
         <Routes>
           <Route path="/" element={<HomePage onCallBack={handleCallBack} onDataChange={handleData} username={username} />} />
-          <Route path="/signup" element={<SignUp onCallBack={handleLogIn} onCallBack2={handleLogIn2} />} />
-          <Route path="/login" element={<LogIn onCallBack={handleLogIn} onCallBack2={handleLogIn2} />} />
-          <Route path="/user/jobs" element={<Wishlist username={username} email={email} />} />
+          <Route path="/signup" element={<SignUp onCallBack={handleLogIn} onCallBack2={handleLogIn2} onCallBack3={handleLogIn3}/>} />
+          <Route path="/login" element={<LogIn onCallBack={handleLogIn} onCallBack2={handleLogIn2} onCallBack3={handleLogIn3}/>} />
+          <Route path="/user/jobs" element={<Wishlist username={username} email={email} joblist={joblist} />} />
           <Route path="/query/jobs" element={<Jobs data={data} isLogged={isLogged} email={email} />} />
+          <Route path="/error" element={<ErrorPage/>}/>
         </Routes>
       </div>
     </Router>

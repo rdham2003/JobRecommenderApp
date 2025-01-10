@@ -270,5 +270,78 @@ label{
   color: white
 }
 
+#saved_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 5%;
+  margin: auto;
+}
 
+.saved_card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 22rem;
+  height: 33rem;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px grey;
+  background-color: white;
+  word-break: break-word;
+  position: relative; 
+  margin: 10px; 
+}
 
+.new_job_title {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.new_job_company {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.new_job_description {
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+.new_job_link {
+  font-size: 10px;
+  color: blue;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.new_job_link:hover {
+  text-decoration: underline;
+}
+
+.new_job_salary {
+  font-size: 12px;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.new_job_date {
+  font-size: 12px;
+  position: absolute;
+  top: 5%;
+  left: 2%; 
+}
+
+.new_job_location {
+  font-size: 12px;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+#delete_job{
+  margin-top: auto;
+  align-self: center;
+  margin-right: 65%;
+}

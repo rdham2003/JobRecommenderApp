@@ -37,6 +37,9 @@ public class JobController {
             //        service.printAPIData();
             ArrayList<String> resumeData = new ResumeParser("userFile.pdf").parseResume();
             System.out.println(resumeData);
+            if (resumeData.isEmpty()){
+                return null;
+            }
             boolean isInternship = jobType.compareTo("internship") == 0;
             int newDist = Integer.parseInt(distance);
             JSONObject jobData = service.makeCall(country, resumeData, location, newDist, isInternship);

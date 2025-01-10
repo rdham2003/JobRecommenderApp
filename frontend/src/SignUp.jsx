@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react'
 import axios from 'axios';
 
-function SignUp({onCallBack, onCallBack2}){
+function SignUp({onCallBack, onCallBack2, onCallBack3}){
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -42,6 +42,7 @@ function SignUp({onCallBack, onCallBack2}){
         else{
             onCallBack(response.data.username);
             onCallBack2(response.data.email);
+            onCallBack3(response.data.jobs);
             navigate("/");
         }
     }

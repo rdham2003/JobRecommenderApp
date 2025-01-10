@@ -50,8 +50,13 @@ function HomePage({onCallBack, onDataChange, username}){
                 },
             });
             // console.log(response.data)
-            onDataChange(response.data);
-            navigate('/query/jobs');
+            if (response.data == ""){
+                navigate('/error');
+            }
+            else{
+                onDataChange(response.data);
+                navigate('/query/jobs');
+            }
         } catch (error) {
             console.error('Error during form submission:', error);
         }
