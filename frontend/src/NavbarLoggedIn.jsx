@@ -12,7 +12,7 @@ function NavbarLoggedIn({logOut}){
     return(
         <header>
             <nav className="navbar">
-                <h3 className="logo"><a href="/">Job Recommender App</a></h3>
+                <h3 className="logo"><a href="/">SkillTap</a></h3>
                 <ul className="nav_items">
                     <li><a href="/">Home</a></li>
                     <li><a href="/user/jobs">Your Saved Jobs</a></li>
