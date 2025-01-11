@@ -1,5 +1,13 @@
 # SkillTap
 
+**How to run locally**
+Pull the git repo or download the zip file
+Ensure you have node, JDK 21, and the MongoDB Atlas installed
+Run the build.gradle file to install all dependencies
+In the backend terminal, run the command "./gradlew bootRun" to spin up the server (runs on localhost:8080)
+In the frontend terminal, run the command "npm run dev" to spin up the client (runs on localhost:3000)
+Client and Server should run fine
+
 **💼About SkillTap💼**
 
 While searching for jobs and internships, I've been having a recurring problem while perusing the job description: Many of these jobs do not have relative skills on my resume. This has made the search much more difficult that I had believed it to be. So I came up with my own solution: Create an application that parses skills on my resume, fetches jobs using Adzuna's open API and returns said jobs that closely match my resume. These jobs can vary depending on the skillset. For example: I personally have skills in Full-Stack Development, Data Science, DevOps, and Machine learning. So I will be recommended Full-stack Development, Data Science, DevOps, and Machine Learning jobs. This application is applicable for both graduates and undergraduates seeking full-time jobs and internships. For the design, I chose a Tinder-Style UI since I felt that it would be easier to concentrate on one job at a time rather than 50 jobs all together like you would see on Glassdoor and LinkedIn. Finally, I wanted the ability to bookmark jobs I was interested in incase I wanted to apply later on. I created an account system that holds user information and saved job information as well. Users can save jobs recommended to them and also delete them from their wishlist incase they have applied and no longer need to hold onto it. Users can optionallly select their location's country, their zip code, and also choose how close they want their jobs.
