@@ -25,9 +25,11 @@ While searching for jobs and internships, I've been having a recurring problem w
 * JUnit
 * JaCoCo
 
-**DevOps**
+**DevOps (not yet implemented)**
 * Docker
-* Render
+* Jenkins
+* Kubernetes
+* AWS
 
 **Applied Topics** 
 * REST API
