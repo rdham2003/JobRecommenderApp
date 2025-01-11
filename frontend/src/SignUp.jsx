@@ -111,7 +111,7 @@ function SignUp({onCallBack, onCallBack2, onCallBack3}){
                     <div class="mb-3">
                         <br />
                         <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input value={password} name="password" onChange={handlePassChange} type="password" class="form-control" id="pass" placeholder="" required/>
+                        <input value={password} name="password" onChange={handlePassChange} type="password" minLength="12" class="form-control" id="pass" placeholder="" required/>
                     </div>
                     <div id="submit_container">
                     <button id="submit_button" className="btn btn-secondary" type='button' onClick={showPassword}>
