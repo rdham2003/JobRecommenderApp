@@ -35,8 +35,6 @@ While searching for jobs and internships, I've been having a recurring problem w
 
 **DevOps (not yet implemented)**
 * Docker
-* Jenkins
-* Kubernetes
 * AWS
 
 **Applied Topics** 
