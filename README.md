@@ -1,6 +1,9 @@
 # SkillTap
 
-**How to run locally**
+**URL (Taken down due to security issues):**
+http://skilltap-frontend.s3-website-us-east-1.amazonaws.com/
+
+**How to run locally:**
 Pull the git repo or download the zip file
 Ensure you have node, JDK 21, and the MongoDB Atlas installed
 Run the build.gradle file to install all dependencies
@@ -33,9 +36,10 @@ While searching for jobs and internships, I've been having a recurring problem w
 * JUnit
 * JaCoCo
 
-**DevOps (not yet implemented)**
+**DevOps**
 * Docker
-* AWS
+* AWS S3
+* AWS EC2
 
 **Applied Topics** 
 * REST API
